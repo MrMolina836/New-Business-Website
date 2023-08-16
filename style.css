@@ -28,6 +28,10 @@ body{
     margin-left: 20px;
 }
 
+span{
+    color: rgb(100, 37, 247);
+}
+
 a{
     text-decoration: none;
     color: #000000;
@@ -65,16 +69,39 @@ li{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 35px;
+    
+}
+
+.headerImg{
+    width: 100%;
+    height: 90vh;
+}
+
+.displayImg{
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+    object-position: 30% 15%;
 }
 
 .headerText p{
-    font-size: 30px
+    font-size: 25px;
+    position: relative;
+    bottom: 390px;
+    left: 50px;
 }
 
 .headerText h1{
-    font-size: 45px
+    font-size: 45px;
+    position: relative;
+    bottom: 380px;
+    left: 50px;
+}
+
+.headerText h2{
+    bottom: 370px;
+    position: relative;
+    left: 50px;
 }
 
 @media only screen and (max-width: 600px){}    
