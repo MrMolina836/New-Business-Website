@@ -9,206 +9,26 @@
     <title>Business Website</title>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="../Name-Logo.jpeg" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Service</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>UI/Ux Designer</p>
-                <h1>Hi, I'm <span>Roberto</span><br>Molina from America</h1>
+    <header id="navigation">
+        <nav class="navBar flex">
+                <img class="nameLogo" src="./Photos/Name-Logo.jpeg" alt="">
+            <ul class="navList flex">
+                <li><a href="">About</li></a>
+                <li><a href="">Contact</li></a>
+                <li><a href="">Skills</li></a>
+                <li><a href="">Services</li></a>
+                <i class="fas fa-mobile-alt"></i>
+            </ul>
+            <i class="fas fa-mobile-alt"></i>
+        </nav>
+    </header>
+    <section id="introImg">
+        <main class="container">
+            <div class="headerText">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm Roberto<br> Molina from America</h1>
             </div>
-        </div>
-    </div>
-    <!---------------about----------------- -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./IMG_0430.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I'm a Junior Frontend Developer with a passion for building responsive and performant web applications
-                        that provide user friendly experience. Here's a bit more about me.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2022 - Current</span><br>UI/Ux Design Training at ET Institude</li>
-                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
-                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2016</span><br>UI/UX Design Training at ET Institude</li>
-                            <li><span>2016</span><br>MBA from MIT Bangalore.</li>
-                            <li><span>2014</span><br>BBA from ISM Bangalore.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!----------------service----------------->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fas fa-code"></i>
-                <h2>Web Design</h2>
-                <p> Plan, create and code internet sites and web pages, many of which 
-                    combine text with sounds, pictures, graphics and video clips</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fas fa-crop"></i>
-                <h2>UI/UX Design</h2>
-                <p>Create the user interface for an app, website, or other interactive media. </p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fab fa-app-store"></i>
-                <h2>Moblie Design</h2>
-                <p> Discusse the client's requirements and creative idea for application to support mobile functionality.</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-----------------------portfolio------------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="./work-1.png">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app connects you to the talented people around the world. Download it fromn play store.</p>
-                    <a href="#"><i class="fas fa-external-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="./work-2.png">
-                <div class="layer">
-                    <h3>Music App</h3>
-                    <p>The app connects you to the talented people around the world. Download it fromn play store.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="./work-3.png">
-                <div class="layer">
-                    <h3>Online Shopping App</h3>
-                    <p>The app connects you to the talented people around the world. Download it fromn play store.</p>
-                    <a href="#"><i class="fas fa-external-link"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See more</a>
-    </div>
-</div>
-
-<!------------------contact------------------>
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="far fa-paper-plane"></i> Roberto.Molina126@gmail.com</p>
-                <p><i class="fas fa-phone-square"></i> 646-842-7573</p>
-                <div class="social-icon">
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter-square"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
-                </div>
-                <a href="" class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © Roberto Molina.</p>
-    </div>
-</div>
-
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-        
-    </script>
-
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwscdK9SugDAVoGaDbzCS88gaGxoHvKoE23QEbcGvtGvQ2ss0P2JwfZlpcBKNqS8iBHwA/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Messege sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+        </main>
+    </section>
 </body>
 </html>
