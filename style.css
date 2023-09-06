@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    background-color: #000000;
+
 }
 
 .flex{
@@ -55,53 +55,40 @@ li{
     align-items: center;
 }
 
-#introImg{
+#landingPage{
     height: 90vh;
 }
 
-.container{
-    height: 100%;
+.landingContainer{
+    padding: 15px;
+    align-items: center;
     width: 100%;
-}
-
-.headerText{
-    color: #fff;
     height: 100%;
+}
+.landingText{
+    width: 35%;
     display: flex;
-    flex-direction: column;
     
 }
 
-.headerImg{
-    width: 100%;
-    height: 90vh;
+.landingText h2{
+    font-size: 2vw;
+}
+.landingText h1{
+    font-size: 7vw;
 }
 
-.displayImg{
-    width: 100%;
-    height: 100%;
-    object-fit:cover ;
-    object-position: 30% 15%;
+.landingimgContainer{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
-
-.headerText p{
-    font-size: 25px;
-    position: relative;
-    bottom: 390px;
-    left: 50px;
-}
-
-.headerText h1{
-    font-size: 45px;
-    position: relative;
-    bottom: 380px;
-    left: 50px;
-}
-
-.headerText h2{
-    bottom: 370px;
-    position: relative;
-    left: 50px;
+.landingImg{
+    width: 550px;
+    height: 500px;
+    border-radius: 50%;
 }
 
 @media only screen and (max-width: 600px){}    
