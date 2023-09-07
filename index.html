@@ -33,5 +33,103 @@
             </div>
         </div>
     </section>
+    <!--------------------------------------About Me--------------------------------------------->
+    <section id="aboutPage">
+        <div class="aboutContainer">
+            <div class="row">
+                <div class="aboutCol1">
+                    <img src="./Photos/IMG_0430.jpg" alt="">
+                </div>
+                <div class="aboutCol2">
+                    <h2 class="subTitle">About Me</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, natus perferendis? 
+                        Libero facere quasi, unde quia reiciendis temporibus deserunt voluptate. Harum fugiat quasi, 
+                        optio id ut deserunt saepe dolor iste.
+                    </p>
+                    <div class="tabsTitles">
+                        <p class="tabLinks active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tabLinks"onclick="openTab('experience')">Experience</p>
+                        <p class="tabLinks"onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tabContents activeTab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>App Development</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tabContents" id="experience">
+                        <ul>
+                            <li><span>Experience</span><br>Designing Web/App interfaces</li>
+                            <li><span>Experience</span><br>Designing Web/App interfaces</li>
+                            <li><span>Experience</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tabContents" id="education">
+                        <ul>
+                            <li><span>education</span><br>Designing Web/App interfaces</li>
+                            <li><span>education</span><br>Designing Web/App interfaces</li>
+                            <li><span>education</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-----------------------------------------Service Page--------------------------------------------->
+<section id="servicePage">
+    <div class="serviceContainer">
+        <h1 class="subTitle">My Services</h1>
+        <div class="serviceList">
+            <div>
+                <h2>Web Design</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque amet, excepturi 
+                    cum modi sint similique corrupti aliquid voluptates veniam praesentium vitae 
+                    consequuntur esse illum! Omnis debitis accusantium praesentium doloribus minus.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>UI/UX Design</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque amet, excepturi 
+                    cum modi sint similique corrupti aliquid voluptates veniam praesentium vitae 
+                    consequuntur esse illum! Omnis debitis accusantium praesentium doloribus minus.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>App Design</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque amet, excepturi 
+                    cum modi sint similique corrupti aliquid voluptates veniam praesentium vitae 
+                    consequuntur esse illum! Omnis debitis accusantium praesentium doloribus minus.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script>
+        let tabLinks = document.getElementsByClassName("tabLinks");
+        let tabContents = document.getElementsByClassName("tabContents");
+
+        function openTab(tabname){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link");
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("activeTab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("activeTab");
+        }
+
+
+    </script>
 </body>
 </html>
