@@ -1,202 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Business Website</title>
-</head>
-<body>
-    <header id="navigation">
-        <nav class="navBar flex">
-                <img class="nameLogo" src="./Photos/Name-Logo.jpeg" alt="">
-            <ul class="navList flex">
-                <li><a href="">About</li></a>
-                <li><a href="">Contact</li></a>
-                <li><a href="">Skills</li></a>
-                <li><a href="">Services</li></a>
-                <i class="fas fa-mobile-alt"></i>
-            </ul>
-            <i class="fas fa-mobile-alt"></i>
-        </nav>
-    </header>
-    <section id="landingPage">
-        <div class="landingContainer flex">
-            <div class="landingText">
-                <h2>Hello, I'm</h2>
-                <h1>Roberto <span>Molina</span></h1>
-            </div>
-            <div class="landingimgContainer">
-                <img class="landingImg" src="./Photos/IMG_0430.jpg" alt="">
+  </head>
+  <body>
+    <div id="navigation">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="headerText">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Roberto</span> <br>Molina</h1>
             </div>
         </div>
-    </section>
+    </div>
+      
+
     <!--------------------------------------About Me--------------------------------------------->
     <section id="aboutPage">
-        <div class="aboutContainer">
-            <div class="row">
-                <div class="aboutCol1">
-                    <img src="./Photos/IMG_0430.jpg" alt="">
-                </div>
-                <div class="aboutCol2">
-                    <h2 class="subTitle">About Me</h2>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, natus perferendis? 
-                        Libero facere quasi, unde quia reiciendis temporibus deserunt voluptate. Harum fugiat quasi, 
-                        optio id ut deserunt saepe dolor iste.
-                    </p>
-                    <div class="tabsTitles">
-                        <p class="tabLinks active-link" onclick="openTab('skills')">Skills</p>
-                        <p class="tabLinks"onclick="openTab('experience')">Experience</p>
-                        <p class="tabLinks"onclick="openTab('education')">Education</p>
-                    </div>
-                    <div class="tabContents activeTab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
-                            <li><span>App Development</span><br>Designing Web/App interfaces</li>
-                        </ul>
-                    </div>
-                    <div class="tabContents" id="experience">
-                        <ul>
-                            <li><span>Experience</span><br>Designing Web/App interfaces</li>
-                            <li><span>Experience</span><br>Designing Web/App interfaces</li>
-                            <li><span>Experience</span><br>Designing Web/App interfaces</li>
-                        </ul>
-                    </div>
-                    <div class="tabContents" id="education">
-                        <ul>
-                            <li><span>education</span><br>Designing Web/App interfaces</li>
-                            <li><span>education</span><br>Designing Web/App interfaces</li>
-                            <li><span>education</span><br>Designing Web/App interfaces</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="aboutContainer">
+        <div class="row">
+          <div class="aboutCol1">
+            <img src="./Photos/IMG_0430.jpg" alt="" />
+          </div>
+          <div class="aboutCol2">
+            <h2 class="subTitle">About Me</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Temporibus, natus perferendis? Libero facere quasi, unde quia
+              reiciendis temporibus deserunt voluptate. Harum fugiat quasi,
+              optio id ut deserunt saepe dolor iste.
+            </p>
+            <div class="tabsTitles">
+              <p class="tabLinks active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tabLinks" onclick="openTab('experience')">Experience</p>
+              <p class="tabLinks" onclick="openTab('education')">Education</p>
             </div>
+            <div class="tabContents activeTab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li>
+                  <span>Web Development</span><br />Designing Web/App interfaces
+                </li>
+                <li>
+                  <span>App Development</span><br />Designing Web/App interfaces
+                </li>
+              </ul>
+            </div>
+            <div class="tabContents" id="experience">
+              <ul>
+                <li>
+                  <span>Experience</span><br />Designing Web/App interfaces
+                </li>
+                <li>
+                  <span>Experience</span><br />Designing Web/App interfaces
+                </li>
+                <li>
+                  <span>Experience</span><br />Designing Web/App interfaces
+                </li>
+              </ul>
+            </div>
+            <div class="tabContents" id="education">
+              <ul>
+                <li>
+                  <span>education</span><br />Designing Web/App interfaces
+                </li>
+                <li>
+                  <span>education</span><br />Designing Web/App interfaces
+                </li>
+                <li>
+                  <span>education</span><br />Designing Web/App interfaces
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-<!-----------------------------------------Service Page--------------------------------------------->
-<section id="servicePage">
-    <div class="serviceContainer">
+    <!-----------------------------------------Service Page--------------------------------------------->
+    <section id="servicePage">
+      <div class="serviceContainer">
         <h1 class="subTitle">My Services</h1>
         <div class="serviceList">
-            <div>
-                <i class="fas fa-code"></i>
-                <h2>Web Design</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque amet, excepturi 
-                    cum modi sint similique corrupti aliquid voluptates veniam praesentium vitae 
-                    consequuntur esse illum! Omnis debitis accusantium praesentium doloribus minus.
-                </p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fas fa-crop-alt"></i>
-                <h2>UI/UX Design</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque amet, excepturi 
-                    cum modi sint similique corrupti aliquid voluptates veniam praesentium vitae 
-                    consequuntur esse illum! Omnis debitis accusantium praesentium doloribus minus.
-                </p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fab fa-app-store"></i>
-                <h2>App Design</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque amet, excepturi 
-                    cum modi sint similique corrupti aliquid voluptates veniam praesentium vitae 
-                    consequuntur esse illum! Omnis debitis accusantium praesentium doloribus minus.
-                </p>
-                <a href="#">Learn More</a>
-            </div>
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
+              amet, excepturi cum modi sint similique corrupti aliquid
+              voluptates veniam praesentium vitae consequuntur esse illum! Omnis
+              debitis accusantium praesentium doloribus minus.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
+              amet, excepturi cum modi sint similique corrupti aliquid
+              voluptates veniam praesentium vitae consequuntur esse illum! Omnis
+              debitis accusantium praesentium doloribus minus.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
+              amet, excepturi cum modi sint similique corrupti aliquid
+              voluptates veniam praesentium vitae consequuntur esse illum! Omnis
+              debitis accusantium praesentium doloribus minus.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
         </div>
-    </div>
-</section>
-<!-------------------------------------------Portfolio----------------------------------------------->
-<section id="portfolio">
-    <div class="portfolioContainer">
+      </div>
+    </section>
+    <!-------------------------------------------Portfolio----------------------------------------------->
+    <section id="portfolio">
+      <div class="portfolioContainer">
         <h1 class="subTitle">My Work</h1>
         <div class="workList">
-            <div class="work">
-                <img src="./Photos/work-1.png" alt="">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>Need to write a short descrption</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </div>
+          <div class="work">
+            <img src="./Photos/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Need to write a short descrption</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
             </div>
-            <div class="work">
-                <img src="./Photos/work-2.png" alt="">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>Need to write a short descrption</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="./Photos/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Need to write a short descrption</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
             </div>
-            <div class="work">
-                <img src="./Photos/work-3.png" alt="">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>Need to write a short descrption</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="./Photos/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Need to write a short descrption</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
             </div>
+          </div>
         </div>
         <a href="#" class="btn">See more</a>
-    </div>
-</section>
-<!-------------------------------------------Contact Me----------------------------------------------->
-<section id="contact">
-    <div class="contactContainer">
+      </div>
+    </section>
+    <!-------------------------------------------Contact Me----------------------------------------------->
+    <section id="contact">
+      <div class="contactContainer">
         <div class="row">
-            <div class="contactLeft">
-                <h1 class="subTitle">Contact Me</h1>
-                <p><i class="fas fa-paper-plane"></i>contact@email.com</p>
-                <p><i class="fas fa-phone-square-alt"></i>646-842-7573</p>
-                <div class="socialIcon">
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
-                </div>
-                <a href="" download class="btn btn2">Download CV</a>
+          <div class="contactLeft">
+            <h1 class="subTitle">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>mrmolinaa1@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>646-842-7573</p>
+            <div class="socialIcon">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
             </div>
-            <div class="contactRight">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6">Your Message</textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-            </div>
+            <a href="" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contactRight">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-    </div>
-    <div class="copyrights">
+      </div>
+      <div class="copyrights">
         <p>Copyright @ Roberto Molina.</p>
-    </div>
-</section>
-
-
-
+      </div>
+    </section>
 
     <script>
-        let tabLinks = document.getElementsByClassName("tabLinks");
-        let tabContents = document.getElementsByClassName("tabContents");
+      let tabLinks = document.getElementsByClassName("tabLinks");
+      let tabContents = document.getElementsByClassName("tabContents");
 
-        function openTab(tabname){
-            for(tabLink of tabLinks){
-                tabLink.classList.remove("active-link");
-            }
-            for(tabContent of tabContents){
-                tabContent.classList.remove("activeTab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("activeTab");
+      function openTab(tabname) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
         }
-
-
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("activeTab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("activeTab");
+      }
     </script>
-</body>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyt2HvTHfUCF5n6rlvnNGYzDr7GqW5qS_nJ-9HnPeAACwzhU81j_WaU-n49zWOnHh8ryw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>

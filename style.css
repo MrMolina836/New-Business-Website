@@ -11,6 +11,8 @@
 
 html{
     scroll-behavior: smooth;
+    touch-action: pan-y;
+    overflow-x: hidden;
 }
 
 body{
@@ -45,55 +47,56 @@ li{
 
 #navigation{
     background-color: whitesmoke;
+    width: 100%;
+    height: 100vh;
 }
 
-.navBar{
-    height: 10vh;
-    width: 100%;
-    color: black;
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
 }
 
-#landingPage{
-    height: 90vh;
+nav ul li a{
+    font-size: 18px;
+    position: relative;
 }
 
-.landingContainer{
-    padding: 10px 8%;
-    align-items: center;
-    justify-content: space-around;
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
     width: 100%;
-    height: 100%;
-    
-}
-.landingText{
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
 }
 
-.landingText h2{
-    font-size: 35px;
-    margin-left: 5px;
-}
-.landingText h1{
-    font-size: 120px;
+.headerText{
+    margin-top: 20%;
+    font-size: 30px;
 }
 
-.landingimgContainer{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.landingImg{
-    width: 550px;
-    height: 500px;
-    border-radius: 50%;
+.headerText h1{
+    font-size: 60px;
+    margin-top: 20px;
 }
 
 /*                         About Me                            */
@@ -214,6 +217,8 @@ li{
     transform: translateY(-10px);
 }
 
+/*                                         Portfolio Page                                              */
+
 
 #portfolio{
     padding: 50px 0;
@@ -292,8 +297,11 @@ li{
     background: #ff004f;
 }
 
+/*                                         Contact Page                                              */
+
+
 .contactContainer{
-    padding: 10px 10%;
+    padding: 30px 10%;
 }
 
 .contactLeft{
@@ -359,21 +367,51 @@ form .btn2{
     margin-top: 20px;
 }
 
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
 
 
+/*                                css for small screens                          */
 
+nav .fas{
+    display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 600px){}    
+@media only screen and (max-width: 600px){
+    #landingPage{
+        width: 100%;
+    }
+    .landingContainer{
+        padding: 10px 10%;
+    }
+    .landingimgContainer{
+        display: none;
+    }
+    .landingText{
+        width: 100%;
+        margin-top: 120%;
+    }
+    .landingText h2{
+        font-size: 26px;
+        margin-left: 0;
+    }
+    .landingText h1{
+        font-size: 40px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+}    
