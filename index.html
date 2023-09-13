@@ -12,90 +12,68 @@
     <title>Business Website</title>
   </head>
   <body>
-    <div id="navigation">
-        <div class="container">
-            <nav>
-                <img src="" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="headerText">
-                <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Roberto</span> <br>Molina</h1>
-            </div>
-        </div>
-    </div>
-      
+    <!-----------------------------------------Header Page------------------------------------------------>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Crossroads Agency 
+            </a>
 
-    <!--------------------------------------About Me--------------------------------------------->
-    <section id="aboutPage">
-      <div class="aboutContainer">
-        <div class="row">
-          <div class="aboutCol1">
-            <img src="./Photos/IMG_0430.jpg" alt="" />
-          </div>
-          <div class="aboutCol2">
-            <h2 class="subTitle">About Me</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Temporibus, natus perferendis? Libero facere quasi, unde quia
-              reiciendis temporibus deserunt voluptate. Harum fugiat quasi,
-              optio id ut deserunt saepe dolor iste.
-            </p>
-            <div class="tabsTitles">
-              <p class="tabLinks active-link" onclick="openTab('skills')">
-                Skills
-              </p>
-              <p class="tabLinks" onclick="openTab('experience')">Experience</p>
-              <p class="tabLinks" onclick="openTab('education')">Education</p>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="fas fa-home"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="fas fa-trophy"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualifications" class="nav__link">
+                            <i class="fas fa-book-open"></i>Qualifications
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="fas fa-briefcase"></i>Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="fas fa-image"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="fas fa-comment"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+               <!------------------Close button------------------> 
+               <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+               </div>
             </div>
-            <div class="tabContents activeTab" id="skills">
-              <ul>
-                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
-                <li>
-                  <span>Web Development</span><br />Designing Web/App interfaces
-                </li>
-                <li>
-                  <span>App Development</span><br />Designing Web/App interfaces
-                </li>
-              </ul>
+            <div class="nav__buttons">
+                <!--------------Theme change button----------------->
+                <!-- <i class="fas fa-moon change-theme" id="theme-button"></i> -->
+
+                <!--------------Toggle button----------------->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-            <div class="tabContents" id="experience">
-              <ul>
-                <li>
-                  <span>Experience</span><br />Designing Web/App interfaces
-                </li>
-                <li>
-                  <span>Experience</span><br />Designing Web/App interfaces
-                </li>
-                <li>
-                  <span>Experience</span><br />Designing Web/App interfaces
-                </li>
-              </ul>
-            </div>
-            <div class="tabContents" id="education">
-              <ul>
-                <li>
-                  <span>education</span><br />Designing Web/App interfaces
-                </li>
-                <li>
-                  <span>education</span><br />Designing Web/App interfaces
-                </li>
-                <li>
-                  <span>education</span><br />Designing Web/App interfaces
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-----------------------------------------Service Page--------------------------------------------->
+        </nav>
+    </header>
+
+ <!-----------------------------------------Main Page------------------------------------------------>
+
+
+ 
+    <!-----------------------------------------Service Page
     <section id="servicePage">
       <div class="serviceContainer">
         <h1 class="subTitle">My Services</h1>
@@ -136,40 +114,9 @@
         </div>
       </div>
     </section>
-    <!-------------------------------------------Portfolio----------------------------------------------->
-    <section id="portfolio">
-      <div class="portfolioContainer">
-        <h1 class="subTitle">My Work</h1>
-        <div class="workList">
-          <div class="work">
-            <img src="./Photos/work-1.png" alt="" />
-            <div class="layer">
-              <h3>Social Media App</h3>
-              <p>Need to write a short descrption</p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="./Photos/work-2.png" alt="" />
-            <div class="layer">
-              <h3>Social Media App</h3>
-              <p>Need to write a short descrption</p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="./Photos/work-3.png" alt="" />
-            <div class="layer">
-              <h3>Social Media App</h3>
-              <p>Need to write a short descrption</p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="btn">See more</a>
-      </div>
-    </section>
-    <!-------------------------------------------Contact Me----------------------------------------------->
+    <!-------------------------------------------Portfolio-
+    
+    <!-------------------------------------------Contact Me--
     <section id="contact">
       <div class="contactContainer">
         <div class="row">
@@ -244,5 +191,7 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
+    --->
+    <script src="main.js"></script>
   </body>
 </html>
