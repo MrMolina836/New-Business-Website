@@ -34,7 +34,7 @@
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: 0.938rem;
-  --small-font-size: 813rem;
+  --small-font-size: .813rem;
   --smaller-font-size: 0.75rem;
   --tiny-font-size: 0.625rem;
 
@@ -57,8 +57,8 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: 875rem;
-    --smaller-font-size: 813rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
     --tiny-font-size: .688rem;
   }
 }
@@ -115,10 +115,6 @@ h1, h2, h3{
 .flex {
   display: flex;
   gap: var(--gap, 2rem);
-}
-
-span {
-  color: rgb(100, 37, 247);
 }
 
 a {
@@ -294,6 +290,10 @@ img {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
 }
+
+/*                                         Skills Section                                  */
+
+
 
 
 
