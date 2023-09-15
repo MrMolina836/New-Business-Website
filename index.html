@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!--=============================Swiper CSS=============================================-->
+    <link rel="stylesheet" href="assets/css/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css">
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -318,6 +320,63 @@
         <section class="projects section" id="projects">
           <h2 class="section__title">Projects</h2>
           <span class="section__subtitle">Most recent work</span>
+
+          <div class="container section__border">
+            <div class="projects__container swiper">
+              <div class="swiper-wrapper">
+                <!--==========================Project 1===========================-->
+                <div class="projects__content swiper-slide">
+                  <img src="./Photos/work-1.png" alt="projects images" class="projects__img">
+
+                  <div>
+                    <span class="projects__subtitle">Web</span>
+                    <h1 class="projects__title">Modern Website</h1>
+                    <a href="" class="projects__button">
+                      View Demo <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <!--==========================Project 2===========================-->
+                <div class="projects__content swiper-slide">
+                  <img src="./Photos/work-2.png" alt="projects images" class="projects__img">
+
+                  <div>
+                    <span class="projects__subtitle">Web</span>
+                    <h1 class="projects__title">ECommerce Store</h1>
+                    <a href="" class="projects__button">
+                      View Demo <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <!--==========================Project 3===========================-->
+                <div class="projects__content swiper-slide">
+                  <img src="./Photos/work-3.png" alt="projects images" class="projects__img">
+
+                  <div>
+                    <span class="projects__subtitle">Web</span>
+                    <h1 class="projects__title">Church Website</h1>
+                    <a href="" class="projects__button">
+                      View Demo <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <!--==========================Project 4===========================-->
+                <div class="projects__content swiper-slide">
+                  <img src="./Photos/work-1.png" alt="projects images" class="projects__img">
+
+                  <div>
+                    <span class="projects__subtitle">Web</span>
+                    <h1 class="projects__title">LosTheHairDoctor</h1>
+                    <a href="" class="projects__button">
+                      View Demo <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
         </section>
         <section class="testimonial section" id="home">
 
@@ -407,21 +466,6 @@
       </div>
     </section>
 
-    <script>
-      let tabLinks = document.getElementsByClassName("tabLinks");
-      let tabContents = document.getElementsByClassName("tabContents");
-
-      function openTab(tabname) {
-        for (tabLink of tabLinks) {
-          tabLink.classList.remove("active-link");
-        }
-        for (tabContent of tabContents) {
-          tabContent.classList.remove("activeTab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("activeTab");
-      }
-    </script>
 
     <script>
       const scriptURL =
@@ -442,7 +486,8 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
-    --->
+    <!--====================Swiper JS============================-->
+  <script src="assets/js/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
