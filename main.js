@@ -48,3 +48,15 @@ let swiperProjects = new Swiper(".projects__container", {
         },
     },
   });
+
+  /*=============== Email JS ===============*/
+  const contactForm = document.getElementById('.contact-form'),
+        contactName = document.getElementById('.contact-name'),
+        contactEmail = document.getElementById('.contact-email'),
+        contactProject = document.getElementById('.contact-project'),
+        contactMessage = document.getElementById('.contact-message')
+    
+    const sendEmail = (e) =>{
+        e.preventDefault()
+    }
+    contactForm.addEventListener('submit', sendEmail)
