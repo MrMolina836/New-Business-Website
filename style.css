@@ -647,8 +647,16 @@ img {
 .contact__message{
   font-size: var(--small-font-size);
   position: absolute;
-  bottom: 2.8rem;
+  bottom: 2rem;
   left: 1.5rem;
+}
+
+/*              Status Color                */
+.color-red{
+  color: hsl(4, 71%, 50%);
+}
+.color-blue{
+  color: hsl(207, 56%, 45%);
 }
 
 
