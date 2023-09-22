@@ -558,7 +558,7 @@ img {
   justify-content: center;
 }
 .projects__img{
-  width: 250px;
+  width: 350px;
   border-radius: .75rem;
   margin-bottom: 1.25rem;
 }
@@ -570,6 +570,12 @@ img {
   font-size: var(--h2-font-size);
   margin-bottom: 1.25rem;
   margin: .5rem 0 1.25rem;
+}
+.projects__description{
+ width: 100%;
+ font-size: var(--small-font-size);
+ font-family: var(--title-font);
+ margin-bottom: 10px;
 }
 .projects__button{
   display: inline-flex;
@@ -602,12 +608,12 @@ img {
 }
 
 .projects__container .swiper-button-prev{
-  left: 6rem;
-  top: 8rem;
+  left: 9rem;
+  top: 12rem;
 }
 .projects__container .swiper-button-next{
-  right: 6rem;
-  top: 8rem;
+  right: 9rem;
+  top: 12rem;
 }
 
 .projects__container .swiper-slide{
@@ -625,6 +631,23 @@ img {
 .projects__container .swiper-pagination-bullet-active{
   background-color: var(--title-color);
 }
+
+/*                                         Project Subsection                                          */
+.project{
+  text-align: center;
+  background-color: #73369e;
+}
+.services__btn i{
+  transition: .3s;
+}
+.services__btn i:hover{
+  transform: translateX(.25rem);
+}
+.projects__img{
+  width: 232px;
+  justify-self: center;
+}
+
 
 
 /*                                        New Contact Page                                              */
