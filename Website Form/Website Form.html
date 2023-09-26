@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Form.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <header>Website Form</header>
+        <form action="#" class="form">
+            <div class="input__box">
+                <label>Business Name</label>
+                <input type="text" placeholder="Enter Business Name" required>
+            </div>
+            
+            <div class="input__box">
+                <label>Email</label>
+                <input type="text" placeholder="Enter Email Address" required>
+            </div>
+
+            <div class="column">
+                <div class="input__box">
+                    <label>Phone Number</label>
+                    <input type="text" placeholder="Enter Phone Number">
+                </div>
+
+                <div class="input__box">
+                    <label>Point of Contact</label>
+                    <input type="text" placeholder="Enter Contact Person">
+                </div>
+            </div>
+
+            <div class="input__box">
+                <label>Address</label>
+                <input type="text" placeholder="Enter Street Address" required>
+                <input type="text" placeholder="Enter Street Address Line 2" required>
+
+                <div class="column">
+                    <div class="select__box">
+                        <select>
+                            <option>Country</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="text" placeholder="Enter Your City" required>
+                <input type="text" placeholder="Enter Your State" required>
+                <input type="text" placeholder="Enter Postal Code" required>
+            </div>
+            <div class="service__box">
+                <h3>Services</h3>
+                <div class="service__option">
+                    <div class="services">
+                        <label for="services">Choose which service you would like...</label>
+                        <select name="" id="services">
+                            <option value="">Web Design</option>
+                            <option value="">App Design</option>
+                            <option value="">UI/UX Design</option>
+                            <option value=""> All</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

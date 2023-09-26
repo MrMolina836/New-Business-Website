@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --body-font: "Roboto", sans-serif;
+    --title-font: "Lora", serif;
+
+    --title-color: hsl(207, 4%, 16%);
+    --text-color: hsl(207, 4%, 28%);
+    --text-color-light: hsl(210, 4%, 64%);
+
+    --gradient-color: linear-gradient(
+    180deg,
+    hsla(207, 48%, 72%, 0),
+    hsla(207, 65%, 65%, 1)
+    );
+
+    --normal-font-size: 0.938rem;
+    --small-font-size: .813rem;
+    --h1-font-size: 2rem;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: var(--gradient-color);
+}
+
+
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: var(--text-color-light);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);;
+}
+.container header{
+    font-size: var(--h1-font-size);
+    font-weight: 500;
+    font-family: var(--title-font);
+    color: var(--title-color);
+    text-align: center;
+}
+.container .form{
+    margin-top: 30px;
+}
+.form .input__box{
+    width: 100%;
+    margin-top: 20px;
+}
+.input__box label{
+    color: var(--text-color);
+}
+.form :where(.input__box input, .select__box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 8px;
+    outline: none;
+    color: var(--text-color-light);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0 15px;
+}
+
+.form .column{
+    display: flex;
+    column-gap: 15px;
+}
+
+.select__box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: var(--text-color-light);
+    font-family: var(--);
+    font-size: var(--normal-font-size);
+}
+
+
+@media screen and (max-width: 500px){
+    .form .column {
+        flex-wrap: wrap;
+    }
+}
