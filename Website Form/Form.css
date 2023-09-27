@@ -89,6 +89,11 @@ body{
     font-family: var(--);
     font-size: var(--normal-font-size);
 }
+.section__subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
 .website__info{
     padding-top: 10px;
     min-height: 15vh;
@@ -97,14 +102,23 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 10px;
 }
 .website__info textarea{
-    width: 90%;
-    padding: 10px 15px 0 15px;
+    width: 50%;
+    margin-top: 10px;
+    line-height: 1.5rem;
+    height: 200px;
+    padding: 15px;
+    outline: none;
     border-radius: 8px;
+    resize: none;
     font-family: var(--body-font);
 }
 
+.file-upload-input{
+    font-family: var(--title-font);
+}
 .form :where(.service__option, .service){
     display: flex;
     align-items: center;
