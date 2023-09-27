@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Form.css">
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
 </head>
 <body>
@@ -32,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="input__box">
+            <div class="input__box address">
                 <label>Address</label>
                 <input type="text" placeholder="Enter Street Address" required>
                 <input type="text" placeholder="Enter Street Address Line 2" required>
@@ -40,7 +44,12 @@
                 <div class="column">
                     <div class="select__box">
                         <select>
-                            <option>Country</option>
+                            <option hidden>Country</option>
+                            <option>America</option>
+                            <option>India</option>
+                            <option>Japan</option>
+                            <option>Russia</option>
+                            <option>Europe</option>
                         </select>
                     </div>
                 </div>
@@ -48,20 +57,37 @@
                 <input type="text" placeholder="Enter Your State" required>
                 <input type="text" placeholder="Enter Postal Code" required>
             </div>
-            <div class="service__box">
-                <h3>Services</h3>
+            <div class="service__container">
+                <h3>Website Information</h3>
+                <div class="website__info">
+                    <label>About Me Section</label>
+                    <textarea type="text" placeholder="Please write a brief about me, for your company." required></textarea>
+                </div>
+            </div>
+            <div class="service__container">
+                <h3>Service Options</h3>
                 <div class="service__option">
-                    <div class="services">
-                        <label for="services">Choose which service you would like...</label>
-                        <select name="" id="services">
-                            <option value="">Web Design</option>
-                            <option value="">App Design</option>
-                            <option value="">UI/UX Design</option>
-                            <option value=""> All</option>
-                        </select>
+                    <div class="service">
+                        <input type="checkbox" id="check__web" name="service">
+                        <label for="check__web">Web Design</label>
+                    </div>
+                    <div class="service">
+                        <input type="checkbox" id="check__ui" name="service">
+                        <label for="check__ui">UI/UX Design</label>
+                    </div>
+                    <div class="service">
+                        <input type="checkbox" id="check__app" name="service">
+                        <label for="check__app">App Design</label>
+                    </div>
+                    <div class="service">
+                        <input type="checkbox" id="check__all" name="service">
+                        <label for="check__all">All</label>
                     </div>
                 </div>
             </div>
+
+            <button>Submit <i class="fas fa-paper-plane"></i></button>
+            
         </form>
     </section>
 </body>
