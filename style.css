@@ -68,7 +68,7 @@ html {
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  background-color:#c6d7eb;
   color: var(--text-color);
 }
 h1, h2, h3{
@@ -328,7 +328,7 @@ img {
 }
 .section__border1{
   border-bottom: 1px solid var(--title-color);
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
 }
 .article__container{
   display: flex;
@@ -367,9 +367,7 @@ img {
 
 /*                                         Skills Section                                  */
 
-.skills__container{
-  row-gap: 3.5rem;
-}
+
 .skills__title{
   display: flex;
   justify-content: center;
@@ -383,32 +381,9 @@ img {
   font-size: 1rem;
 }
 
-.skills__info,
-.skills__data,
-.skills__blob{
-  display: grid;
-}
 
-.skills__info{
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem 2rem;
-}
-.skills__data{
-  justify-content: center;
-  text-align: center;
-}
-.skills__blob{
-  width: 80px;
-  height: 100px;
-  background-color: var(--container-color);
-  border-radius: 3rem;
-  place-items: center;
-  margin-bottom: 1rem;
-}
 
-.skills__blob img{
-  width: 50px;
-}
+
 .skills__name{
   font-size: var(--small-font-size);
   margin-bottom: .25rem;
@@ -433,49 +408,6 @@ img {
   
 }
 
-/*                                         Service Page                                              */
-
-#servicePage {
-  padding: 30px 0;
-}
-.serviceContainer {
-  padding: 10px 10%;
-  min-height: 70vh;
-}
-
-.serviceList {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-}
-.serviceList div {
-  background: #262626;
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 10px;
-  transition: background 0.5s, transform 0.5s;
-}
-.serviceList i {
-  font-size: 50px;
-  margin-bottom: 30px;
-}
-.serviceList div h2 {
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-.serviceList div a {
-  color: #fff;
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
-}
-.serviceList div:hover {
-  background: #ff004f;
-  transform: translateY(-10px);
-}
 
 /*                                      New Service Page                                              */
 
@@ -487,7 +419,7 @@ img {
   position: relative;
   width: 390px;
   height: 300px;
-  background-color: var(--container-color);
+  background-color: #ffff;
   text-align: center;
   padding: 3.5rem 1rem;
   border-radius: 10px;
@@ -521,7 +453,7 @@ img {
   border-radius: 15px;
   padding: .1rem .4rem;
   position: relative;
-  top: -40px;
+  top: -50px;
 }
 .services__border{
   width: 410px;
@@ -556,7 +488,7 @@ img {
   display: grid;
   justify-content: center;
 }
-.projects__img{
+.project__img{
   width: 350px;
   border-radius: .75rem;
   margin-bottom: 1.25rem;
@@ -663,6 +595,7 @@ img {
   padding: 20px;
   margin: 15px;
   cursor: pointer;
+  border-radius: 10px;
 }
 .profile__img{
   width: 50px;
@@ -793,11 +726,12 @@ img {
   position: absolute;
   left: 1.25rem;
   z-index: 10;
-  background-color: var(--body-color);
+  background-color: #c6d7eb;
   color: var(--title-color);
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
   padding: .35rem;
+  top: -10px;
 }
 .contact__form-area{
   height: 10rem;
@@ -883,81 +817,6 @@ img {
 }
 
 
-/*                                         Contact Page                                              */
-
-.contactContainer {
-  padding: 30px 10%;
-}
-
-.contactLeft {
-  flex-basis: 35%;
-}
-.contactRight {
-  flex-basis: 60%;
-}
-.contactLeft p {
-  margin-top: 30px;
-}
-.contactLeft p i {
-  color: #ff004f;
-  margin-right: 15px;
-  font-size: 25px;
-}
-.socialIcon {
-  margin-top: 30px;
-}
-.socialIcon a {
-  text-decoration: none;
-  font-size: 30px;
-  margin-right: 15px;
-  color: #ababab;
-  display: inline-block;
-  transition: transform 0.5s;
-}
-.socialIcon a:hover {
-  color: #ff004f;
-  transform: translateY(-5px);
-}
-.btn.btn2 {
-  display: inline-block;
-  background: #ff004f;
-}
-.contactRight form {
-  width: 100%;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  border: 0;
-  outline: none;
-  background: #262626;
-  padding: 15px;
-  margin: 15px 0;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 6px;
-}
-form .btn2 {
-  padding: 14px 60px;
-  font-size: 18px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-.copyrights {
-  width: 100%;
-  text-align: center;
-  padding: 25px 0;
-  background: #262626;
-  font-weight: 300;
-  margin-top: 20px;
-}
-
-#msg {
-  color: #61b752;
-  margin-top: -40px;
-  display: block;
-}
 
 /*                                css for small screens                          */
 
