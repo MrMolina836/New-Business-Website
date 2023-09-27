@@ -689,25 +689,7 @@
 
     </main>
 
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyt2HvTHfUCF5n6rlvnNGYzDr7GqW5qS_nJ-9HnPeAACwzhU81j_WaU-n49zWOnHh8ryw/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 3000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+    
     <!--====================Swiper JS============================-->
   <script src="assets/js/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
 
