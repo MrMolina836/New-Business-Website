@@ -497,6 +497,7 @@ img {
   display: grid;
   justify-content: center;
 }
+
 .project__img{
   width: 350px;
   border-radius: .75rem;
@@ -512,7 +513,7 @@ img {
   margin: .5rem 0 1.25rem;
 }
 .projects__description{
- width: 100%;
+ width: 350px;
  font-size: var(--small-font-size);
  font-family: var(--title-font);
  margin-bottom: 10px;
