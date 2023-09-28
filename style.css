@@ -13,16 +13,11 @@
 
   /*                             Colors                                 */
   --title-color: black;
-  --text-color: hsl(207, 4%, 28%);
+  --text-color: rgb(32, 32, 32);
   --text-color-light: #533a71;
-  --body-color: hsl(207, 4%, 99%);
-  --container-color: hsl(207, 4%, 95%);
+  --nav-color: #ffff;
 
-  --gradient-color: linear-gradient(
-    180deg,
-    hsla(207, 48%, 72%, 0),
-    hsla(207, 65%, 65%, 1)
-  );
+
 
   /*                         Font Size & Typegraph  (.5rem = 8px / 1rem = 16px               */
 
@@ -31,11 +26,10 @@
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
   --normal-font-size: 18px;
-  --small-font-size: .935rem;
+  --small-font-size: 15px;
   --smaller-font-size: 0.90rem;
-  --tiny-font-size: 0.625rem;
+  --tiny-font-size: 11.5px;
 
   /*                         Font Weight                                                      */
 
@@ -51,8 +45,7 @@
   :root {
     --biggest-font-size: 3rem;
     --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
+    --h2-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
@@ -143,7 +136,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--body-color);
+  background-color: var(--nav-color);
   box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
   padding-inline: 1.5rem;
   border-radius: 3rem;
@@ -171,7 +164,7 @@ img {
         right: 0;
         bottom: -60%;
         margin: 0 auto;
-        background-color: var(--body-color);
+        background-color: var(--nav-color);
         box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
         padding: 2rem 1.5rem 5rem;
         border-radius: 2rem;
@@ -233,7 +226,7 @@ img {
   position: relative;
   width: 300px;
   height: 300px;
-  background-color: var(--body-color);
+  background-color: var(--nav-color);
   border: 2px solid var(--text-color-light);
   justify-self: center;
   border-radius: 50%;
@@ -242,7 +235,6 @@ img {
 .home__perfil{
   width: 280px;
   height: 280px;
-  background: var(--gradient-color);
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -427,10 +419,10 @@ img {
 .services__card{
   position: relative;
   width: 390px;
-  height: 300px;
+  height: 320px;
   background-color: #ffff;
   text-align: center;
-  padding: 3.5rem 1rem;
+  padding: 3.4rem 1rem;
   border-radius: 10px;
 }
 .services__card i{
@@ -438,9 +430,9 @@ img {
   font-size: 2rem;
   color: var(--title-color);
   margin-bottom: .75rem;
-  transition: transform .8s;
   position: relative;
   top: -40px;
+  transition: color .3s;
 }
 .services__title{
   font-size: var(--h2-font-size);
@@ -448,13 +440,15 @@ img {
   margin-bottom: .5rem;
   position: relative;
   top: -40px;
+  transition: color .3s;
 }
-.services__description{
+.services__para{
   margin-bottom: 20px;
   position: relative;
   top: -40px;
-  line-height: 1.2rem;
+  line-height: 1.4rem;
   padding: 0 5px;
+  transition: color .2s;
 }
 .services__btn{
   font-size: var(--smaller-font-size);
@@ -463,6 +457,7 @@ img {
   padding: .1rem .4rem;
   position: relative;
   top: -50px;
+  transition: color .3s;
 }
 .services__border{
   width: 410px;
@@ -477,15 +472,28 @@ img {
   transition: opacity .6s;
   opacity: 0;
 }
-.services__card:hover i{
-  transform: rotateY(360deg);
-}
+
 .services__card:hover .services__border{
   opacity: 1;
 }
-.services__card:hover{
-  background-color: hsla(0, 0%, 56%, 0.485);
-  transition: ease-in .5s;
+.services__card:hover {
+  background-color: var(--text-color-light);
+  color: var(--nav-color);
+}
+
+.services__card:hover .services__title{
+  color: var(--nav-color);
+}
+
+.services__card:hover .services__btn{
+  color: var(--nav-color);
+}
+
+.services__card:hover .fas{
+  color: var(--nav-color);
+}
+.services__card:hover .fab{
+  color: var(--nav-color);
 }
 
 /*                                         Project Page                                              */
@@ -673,6 +681,13 @@ img {
   font-size: 1rem;
   font-weight: initial;
 }
+
+.contact__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .contact__info,
 .contact__data,
 .contact__form{
@@ -680,9 +695,14 @@ img {
 }
 .contact__info{
   row-gap: 2rem;
+  text-align: center;
 }
 .contact__data{
   row-gap: .75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .contact__data-title{
   font-size: var(--small-font-size);
@@ -711,6 +731,7 @@ img {
 .contact__form{
   position: relative;
   row-gap: 2rem;
+  width: 100%;
 }
 .contact__form-div{
   position: relative;
