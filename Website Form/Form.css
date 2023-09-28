@@ -125,6 +125,7 @@ body{
     justify-content: center;
     column-gap: 50px;
     flex-wrap: wrap;
+    margin-top: 1.5rem;
 }
 .form .service__container{
     margin-top: 20px;
@@ -142,12 +143,10 @@ body{
     cursor: pointer;
 }
 .form button{
-    width: max-content;
     display: inline-flex;
     align-items: center;
     column-gap: .5rem;
     color: var(--title-color);
-    font-size: var(--small-font-size);
     border: none;
     background: none;
     font-size: var(--h2-font-size);
@@ -155,7 +154,7 @@ body{
     font-weight: var(--font-semi-bold);
     cursor: pointer;
     outline: none;
-    margin-top: 0.75rem;
+    margin-top: 3rem;
 }
 
 
