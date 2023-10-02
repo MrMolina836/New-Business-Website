@@ -976,7 +976,7 @@ img {
   }
 
   #skills{
-    min-height: 120vh;
+    min-height: 160vh;
     margin: 0 6rem;
   }
   .about__container{
@@ -1005,7 +1005,7 @@ img {
   }
   .about__container{
     flex-direction: row;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
   }
 
   .services__container{
@@ -1052,6 +1052,9 @@ img {
   .nav__link{
     font-size: 20px;
   }
+  .container{
+    max-width: 100%;
+  }
   .home__blob{
     width: 400px;
     height: 400px;
@@ -1061,16 +1064,31 @@ img {
     height: 375px;
   }
   .home__info-title{
-    font-size: 20px;
+    font-size: 18px;
   }
   .home__info-description{
-    font-size: 25px;
+    font-size: 20px;
   }
   .home__social-link{
     font-size: 25px;
   }
   #skills{
     min-height: 100vh;
+  }
+  .services__container{
+    display: flex;
+  }
+  .services__border{
+    width: 290px;
+    height: 400px;
+  }
+  .contact__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .contact__content{
+    width: 100%;
   }
 }
 
