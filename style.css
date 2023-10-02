@@ -296,6 +296,8 @@ img {
   text-align: center;
 }
 
+/*                                         Skills Section                                  */
+
 #skills{
   padding-top: 4vh;
   height: 80vh;
@@ -354,6 +356,9 @@ img {
 .article__container p{
   font-size: var(--tiny-font-size);
 }
+.article__container1 p{
+  font-size: var(--tiny-font-size);
+}
 .details__container{
   padding: 1.5rem;
   flex: 1;
@@ -366,10 +371,6 @@ img {
   flex-direction: column;
   align-items: center;
 }
-
-/*                                         Skills Section                                  */
-
-
 .skills__title{
   display: flex;
   justify-content: center;
@@ -948,7 +949,7 @@ img {
 
 @media(max-width: 430px){
   #skills{
-    min-height: 129vh;
+    min-height: 135vh;
   }
   .about__container{
     display: flex;
@@ -958,6 +959,56 @@ img {
   }
 }
 
+@media screen and (min-width: 576px){
+  .nav,
+  .nav__menu{
+    width: 450px;
+  }
+  .nav{
+    margin: 0 auto;
+  }
+
+  #skills{
+    min-height: 110vh;
+    margin: 0 6rem;
+  }
+  .about__container{
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 767px){
+  .home__container{
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+  .home__data{
+    order: -1;
+    grid-row: span 2;
+  }
+  .home__info:nth-child(1){
+    order: 1;
+  }
+  
+  #skills{
+    margin: 0 2rem;
+    min-height: 70vh;
+  }
+  .about__container{
+    flex-direction: row;
+    margin-bottom: 8rem;
+  }
+
+  .services__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects__img{
+    width: 280px;
+  }
+}
 
 @media (max-width: 1060px){
   .testimonial-boxes{
