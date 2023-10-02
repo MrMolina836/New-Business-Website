@@ -156,7 +156,7 @@ img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 2560px){
     .nav__menu{
         position: fixed;
         width: 95%;
@@ -343,7 +343,14 @@ img {
   row-gap: 4.5rem;
   justify-content: space-around;
 }
-.article{
+.article__container article{
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 1.5rem;
+  padding-bottom: 10px;
+}
+.article__container1 article{
   display: flex;
   width: 10rem;
   justify-content: space-around;
@@ -949,7 +956,7 @@ img {
 
 @media(max-width: 430px){
   #skills{
-    min-height: 135vh;
+    min-height: 175vh;
   }
   .about__container{
     display: flex;
@@ -969,7 +976,7 @@ img {
   }
 
   #skills{
-    min-height: 110vh;
+    min-height: 120vh;
     margin: 0 6rem;
   }
   .about__container{
@@ -994,7 +1001,7 @@ img {
   
   #skills{
     margin: 0 2rem;
-    min-height: 70vh;
+    min-height: 125vh;
   }
   .about__container{
     flex-direction: row;
@@ -1004,9 +1011,66 @@ img {
   .services__container{
     grid-template-columns: repeat(2, 1fr);
   }
+  .services__card{
+    width: 350px;
+    height: 370px;
+  }
 
   .projects__img{
     width: 280px;
+  }
+}
+
+@media(max-width: 790px){
+  .testimonial-boxes{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1023px){
+  .nav{
+    width: initial;
+    margin-inline: 1.5rem;
+  }
+  .nav__menu{
+    width: 95%;
+  }
+  .nav__logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+  }
+  .nav__toggle{
+    font-size: 25px;
+  }
+  .nav__menu{
+    padding: 2rem 1.5rem 3rem;
+  }
+  .nav__list{
+    gap: 3rem 4rem;
+  }
+  .nav__link{
+    font-size: 20px;
+  }
+  .home__blob{
+    width: 400px;
+    height: 400px;
+  }
+  .home__perfil{
+    width: 375px;
+    height: 375px;
+  }
+  .home__info-title{
+    font-size: 20px;
+  }
+  .home__info-description{
+    font-size: 25px;
+  }
+  .home__social-link{
+    font-size: 25px;
+  }
+  #skills{
+    min-height: 100vh;
   }
 }
 
@@ -1016,10 +1080,6 @@ img {
     padding: 10px 10px 20px 10px;
   }
 }
-@media(max-width: 790px){
-  .testimonial-boxes{
-    width: 100%;
-  }
-}
+
 
 
