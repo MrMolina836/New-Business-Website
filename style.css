@@ -911,11 +911,26 @@ img {
     top: 0;
   }
 
+  .services__border{
+    display: none;
+  }
   .projects__description{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    overflow-wrap: break-word;
+  }
+  .projects__container .swiper-button-prev{
+    left: 1rem;
+  }
+  .projects__container .swiper-button-next{
+    right: 1rem;
   }
 
+
+  .services__btn{
+    margin-bottom: 10px;
+  }
   .box__top{
     flex-wrap: wrap;
     margin-bottom: 10px;
