@@ -865,6 +865,12 @@ img {
   .container{
     margin-inline: .6rem;
   }
+  .nav__menu{
+    padding-bottom: 16px;
+  }
+  .nav__list{
+    gap: 1.5rem 1.25rem;
+  }
   .home__data{
     display: flex;
     flex-direction: column;
