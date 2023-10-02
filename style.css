@@ -1066,6 +1066,9 @@ img {
   #skills{
     margin: 0 8rem;
   }
+  .about__container{
+    gap: 7rem;
+  }
   .services__container{
     display: flex;
   }
