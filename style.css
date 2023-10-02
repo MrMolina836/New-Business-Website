@@ -986,6 +986,7 @@ img {
   }
 }
 
+
 @media screen and (min-width: 767px){
   .home__container{
     grid-template-columns: 1fr 1fr;
@@ -1021,11 +1022,7 @@ img {
   }
 }
 
-@media(max-width: 790px){
-  .testimonial-boxes{
-    width: 100%;
-  }
-}
+
 @media screen and (min-width: 1023px){
   .nav{
     width: initial;
@@ -1096,6 +1093,12 @@ img {
   .testimonial-boxes{
     width: 45%;
     padding: 10px 10px 20px 10px;
+  }
+}
+
+@media(max-width: 790px){
+  .testimonial-boxes{
+    width: 100%;
   }
 }
 
