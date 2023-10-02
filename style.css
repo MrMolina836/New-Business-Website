@@ -1063,6 +1063,9 @@ img {
   .home__social-link{
     font-size: 25px;
   }
+  #skills{
+    margin: 0 8rem;
+  }
   .services__container{
     display: flex;
   }
