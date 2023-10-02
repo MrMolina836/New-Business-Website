@@ -300,7 +300,6 @@ img {
 
 #skills{
   padding-top: 4vh;
-  height: 80vh;
   margin: 0 2rem;
   min-height: fit-content;
 }
@@ -433,6 +432,10 @@ img {
   text-align: center;
   padding: 3.4rem 1rem;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .services__card i{
   display: block;
@@ -440,7 +443,6 @@ img {
   color: var(--title-color);
   margin-bottom: .75rem;
   position: relative;
-  top: -40px;
   transition: color .3s;
 }
 .services__title{
@@ -448,13 +450,11 @@ img {
   font-weight: var(--font-semi-bold);
   margin-bottom: .5rem;
   position: relative;
-  top: -40px;
   transition: color .3s;
 }
 .services__para{
   margin-bottom: 20px;
   position: relative;
-  top: -40px;
   line-height: 1.4rem;
   padding: 0 5px;
   transition: color .2s;
@@ -465,7 +465,6 @@ img {
   border-radius: 15px;
   padding: .1rem .4rem;
   position: relative;
-  top: -50px;
   transition: color .3s;
 }
 .services__border{
@@ -955,9 +954,6 @@ img {
 }
 
 @media(max-width: 430px){
-  #skills{
-    min-height: 175vh;
-  }
   .about__container{
     display: flex;
     justify-content: space-evenly;
@@ -976,7 +972,6 @@ img {
   }
 
   #skills{
-    min-height: 160vh;
     margin: 0 6rem;
   }
   .about__container{
@@ -1002,7 +997,6 @@ img {
   
   #skills{
     margin: 0 2rem;
-    min-height: 125vh;
   }
   .about__container{
     flex-direction: row;
@@ -1069,11 +1063,16 @@ img {
   .home__social-link{
     font-size: 25px;
   }
-  #skills{
-    min-height: 100vh;
-  }
   .services__container{
     display: flex;
+  }
+
+  .services__card{
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
   }
   .services__border{
     width: 290px;
