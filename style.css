@@ -205,7 +205,111 @@ img {
     bottom: 2rem;
 }
 
+/*                                         Landing Page                                           */
+.landing__container{
+  padding-top: 4vh;
+  height: 100vh;
+  margin: 0 9rem;
+  min-height: fit-content;
+}
 
+.section-container{
+  display: flex;
+}
+
+#profile{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.section__pic-container{
+  display: flex;
+  height: 430px;
+  width: 430px;
+  margin: auto 0;
+}
+
+.company__logo{
+  max-width: none;
+}
+
+.section__text{
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p{
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  font-family: var(--title-font);
+  line-height: 1.5rem;
+}
+
+.section__text__p1{
+  text-align: center;
+}
+.section__text__p1{
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title{
+  font-size: 5rem;
+  text-align: center;
+}
+
+#socials__container{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.btn__container{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.landing__btn{
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  margin-top: 19px;
+}
+
+.color1, 
+.color2{
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+.color1:hover, 
+.color2:hover{
+  cursor: pointer;
+}
+.color1, 
+.color2:hover{
+  background: var(--text-color-light);
+  color: #fff;
+}
+.color1:hover{
+  background: rgb(0, 0, 0);
+}
+.color2{
+  background: none;
+}
+.color2:hover{
+  border: rgb(255, 255, 255) 0.1rem solid;
+  background: var(--text-color-light);
+}
+
+.btn__container{
+  gap: 1rem;
+}
 
 /*                                         Home Page                                              */
 
