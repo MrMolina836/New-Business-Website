@@ -207,7 +207,6 @@ img {
 
 /*                                         Landing Page                                           */
 .landing__container{
-  padding-top: 4vh;
   height: 100vh;
   margin: 0 9rem;
   min-height: fit-content;
@@ -982,6 +981,50 @@ img {
   .nav__list{
     gap: 1.5rem 1.25rem;
   }
+
+  #profile{
+    min-height: 86vh;
+    margin-bottom: 4rem;
+  }
+
+  #profile,
+  .section-container{
+    display: block;
+  }  
+
+  .landing__container{
+    margin: 0 1rem;
+    padding-top: 4vh;
+  }
+  .landing__container, 
+  .section-container{
+    height: fit-content;
+  }
+
+  
+  .company__logo{
+    border-radius: 20px;
+  }
+
+  .section__pic-container{
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .section__text p{
+    font-size: var(--normal-font-size);
+  }
+
+  .title{
+    font-size: 3rem;
+  }
+
+  .btn__container{
+    margin-bottom: 20px;
+  }
+
   .home__data{
     display: flex;
     flex-direction: column;
@@ -1064,6 +1107,48 @@ img {
     flex-wrap: wrap;
     margin-top: 2rem;
   }
+  #profile{
+    min-height: 86vh;
+    margin-bottom: 5rem;
+  }
+
+  #profile,
+  .section-container{
+    display: block;
+  }  
+
+  .landing__container{
+    margin: 0 1rem;
+    padding-top: 4vh;
+  }
+  .landing__container, 
+  .section-container{
+    height: fit-content;
+  }
+
+  
+  .company__logo{
+    border-radius: 20px;
+  }
+
+  .section__pic-container{
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .section__text p{
+    font-size: var(--normal-font-size);
+  }
+
+  .title{
+    font-size: 3rem;
+  }
+
+  .btn__container{
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 576px){
@@ -1074,7 +1159,48 @@ img {
   .nav{
     margin: 0 auto;
   }
+  #profile{
+    min-height: 86vh;
+    margin-bottom: 4rem;
+  }
 
+  #profile,
+  .section-container{
+    display: block;
+  }  
+
+  .landing__container{
+    margin: 0 1rem;
+    padding-top: 4vh;
+  }
+  .landing__container, 
+  .section-container{
+    height: fit-content;
+  }
+
+  
+  .company__logo{
+    border-radius: 20px;
+  }
+
+  .section__pic-container{
+    height: 350px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .section__text p{
+    font-size: var(--normal-font-size);
+  }
+
+  .title{
+    font-size: 3rem;
+  }
+
+  .btn__container{
+    margin-bottom: 20px;
+  }
   #skills{
     margin: 0 6rem;
   }
@@ -1146,6 +1272,49 @@ img {
   }
   .nav__link{
     font-size: 20px;
+  }
+  #profile{
+    min-height: 91vh;
+    margin-bottom: 4rem;
+  }
+
+  #profile,
+  .section-container{
+    display: flex;
+  }  
+
+  .landing__container{
+    margin: 0 5rem;
+    padding-top: 4vh;
+  }
+  .landing__container, 
+  .section-container{
+    height: fit-content;
+  }
+
+  
+  .company__logo{
+    border-radius: 20px;
+  }
+
+  .section__pic-container{
+    display: flex;
+    height: 500px;
+    width: 430px;
+    margin: auto 0;
+  }
+
+  .section__text p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .title{
+    font-size: 5rem;
+  }
+
+  .btn__container{
+    margin-bottom: 20px;
   }
   .container{
     max-width: 100%;
