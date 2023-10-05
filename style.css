@@ -216,7 +216,7 @@ img {
   display: flex;
 }
 
-#profile{
+#home{
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -744,7 +744,7 @@ img {
   object-fit: cover;
   object-position: center;
 }
-.profile{
+.home{
   display: flex;
   align-items: center;
 }
@@ -982,12 +982,12 @@ img {
     gap: 1.5rem 1.25rem;
   }
 
-  #profile{
+  #home{
     min-height: 86vh;
     margin-bottom: 4rem;
   }
 
-  #profile,
+  #home,
   .section-container{
     display: block;
   }  
@@ -1057,7 +1057,6 @@ img {
 
   #services{
     margin: .6rem;
-    height: 220vh;
   }
   .services__card{
     width: 100%;
@@ -1107,12 +1106,12 @@ img {
     flex-wrap: wrap;
     margin-top: 2rem;
   }
-  #profile{
+  #home{
     min-height: 86vh;
     margin-bottom: 5rem;
   }
 
-  #profile,
+  #home,
   .section-container{
     display: block;
   }  
@@ -1159,12 +1158,12 @@ img {
   .nav{
     margin: 0 auto;
   }
-  #profile{
+  #home{
     min-height: 86vh;
     margin-bottom: 4rem;
   }
 
-  #profile,
+  #home,
   .section-container{
     display: block;
   }  
@@ -1273,12 +1272,12 @@ img {
   .nav__link{
     font-size: 20px;
   }
-  #profile{
+  #home{
     min-height: 91vh;
     margin-bottom: 4rem;
   }
 
-  #profile,
+  #home,
   .section-container{
     display: flex;
   }  
