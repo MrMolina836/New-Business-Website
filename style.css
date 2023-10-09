@@ -714,12 +714,31 @@ img {
 .skills__section{
   background-color: #000;
   height: 100vh;
+  width: 100%;
+}
+.skills__title-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15rem;
+  color: white;
+  text-align: center;
+}
+.skills__title-section h2{
+  color: white;
+  padding: 1.5rem 0;
+}
+.sphere{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .tagcloud{
-  display: inline-block;
-  top: 100px;
-  left: 32%;
+  display: flex;
+  top: 50px;
   font-weight: bold;
   letter-spacing: 1px;
   font-family: var(--title-font);
