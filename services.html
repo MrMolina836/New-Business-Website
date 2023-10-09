@@ -107,7 +107,8 @@
       </section>
 
       <!--================================Services=========================================================-->
-
+      
+      </section>
       <section class="services" id="services">
         
         <div class="service__divider section__border">
@@ -200,105 +201,35 @@
 
 
 
+      <section class="skills__section">
+        <span class="sphere"></span>
 
-
-     <!--================================SKILLS=========================================================-->
-     <section class="skills" id="skills">
-        <h1 class="section__title">Skills</h1>
-        <h2 class="section__subtitle">Proficiencies and Expertise</h2>
-        <div class="skills__details-container section__border1">
-          <div class="about__container">
-            <div class="details__container">
-              <h2 class="skills__title"><i class="fas fa-code-branch"></i>Frontend Development</h2>
-              <div class="article__container">
-                <article>
-                  <img src="./Photos/HTML.png" class="icon" alt="checkmark">
-                  <div>
-                    <h3>HTML</h3>
-                    <p>Experience</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./Photos/CSS.png" class="icon" alt="checkmark">
-                  <div>
-                    <h3>CSS</h3>
-                    <p>Experience</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./Photos/Javascript.png" class="icon" alt="checkmark">
-                  <div>
-                    <h3>Javascript</h3>
-                    <p>Experience</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./Photos/React.png" class="icon" alt="checkmark">
-                  <div>
-                    <h3>React</h3>
-                    <p>Experience</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./Photos/Git.png" class="icon" alt="checkmark">
-                  <div>
-                    <h3>Git</h3>
-                    <p>Experience</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./Photos/Typescript.png" class="icon" alt="checkmark">
-                  <div>
-                    <h3>Typescript</h3>
-                    <p>Experience</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="details__container">
-              <h2 class="skills__title"><i class="fas fa-laptop-code"></i>Web Development</h2>
-              <div class="article__container1">
-                <article>
-                  <img src="./Photos/UI.png" class="icon" alt="checkmark">
-                  <div>
-                    <h3>UI</h3>
-                    <p>Experience</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./Photos/UX.png" class="icon" alt="checkmark">
-                  <div>
-                    <h3>UX</h3>
-                    <p>Experience</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./Photos/Node.png" class="icon" alt="checkmark">
-                  <div>
-                    <h3>Node</h3>
-                    <p>Experience</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./Photos/Debugging.png" class="icon" alt="checkmark">
-                  <div>
-                    <h3>Debugging</h3>
-                    <p>Experience</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./Photos/Optimization.png" class="icon" alt="checkmark">
-                  <div>
-                    <h3>Optimization</h3>
-                    <p>Experience</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-       
+         
+      
+      <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
 <script src="./main.js"></script>
+
+<script>
+  const Code = [
+    'HTML', 'CSS', 'JAVASCRIPT', 'REACT',
+    'TYPESCRIPT', 'OPTIMIZATION', 'NODE', 'DEBUGGING',
+    'GIT','UX', 'UI'
+  ];
+
+  var tagCloud = TagCloud('.sphere', Code, {
+
+    radius: 300,
+    maxSpeed: 'fast',
+    initSpeed: 'fast',
+    direction: 0,
+    keep: true
+  });
+
+  var color = '#FF5733';
+  document.querySelector('.sphere').style.color = color;
+
+
+
+</script>
 </body>
 </html>
