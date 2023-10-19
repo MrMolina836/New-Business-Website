@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+  .pricing__container{
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 85%, rgba(237,231,255,1) 93%);
+  }
+
+  .pricing__title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  .option__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+    gap: 10px;
+  }
+
+  .container{
+    width: calc(100% / 3.1);
+    border: 1px solid black;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subtitle{
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+  .container p{
+    font-size: 13px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .package__details{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+
+  .package__details h3{
+    font-size: 13px;
+    align-self: center;
+    padding-bottom: 20px;
+  }
+
+  .package__details ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 13px;
+    gap: 20px;
+    height: 100%;
+  }
+
+  .package__total{
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    gap: 10px;
+  }
+  .package__total h3{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .total__breakdown{
+    font-size: 12px;
+  }
+  .total__breakdown h4{
+    font-size: 11px;
+    padding-bottom: 5px;
+  }
+  
