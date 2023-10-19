@@ -14,7 +14,7 @@
   /*                             Colors                                 */
   --title-color: black;
   --text-color: rgb(32, 32, 32);
-  --text-color-light: #533a71;
+  --text-color-light: #6851ba;
   --nav-color: #ffff;
 
 
@@ -61,7 +61,8 @@ html {
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color:#d9e4f2;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 85%, rgba(237,231,255,1) 93%);
   color: var(--text-color);
 }
 h1, h2, h3{
@@ -98,7 +99,7 @@ h1, h2, h3{
   display: block;
   font-size: var(--small-font-size);
   color: var(--text-color-light);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .main {
   overflow: hidden; /* For Animations */
