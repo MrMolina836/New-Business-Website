@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:wght@400;500&display=swap");
 
 * {
     margin: 0;
@@ -7,10 +8,147 @@
     font-family: 'Lora', serif;
 }
 
+:root {
+    --header-height: 3.5rem;
+  
+    /*                             Colors                                 */
+    --title-color: black;
+    --text-color: rgb(32, 32, 32);
+    --text-color-light: #6851ba;
+    --nav-color: #ffff;
+  
+  
+  
+    /*                         Font Size & Typegraph  (.5rem = 8px / 1rem = 16px               */
+  
+    --body-font: "Roboto", sans-serif;
+    --title-font: "Lora", serif;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 18px;
+    --small-font-size: 15px;
+    --smaller-font-size: 0.90rem;
+    --tiny-font-size: 11.5px;
+  
+    /*                         Font Weight                                                      */
+  
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  
+    /*                         Z-Index                                                      */
+  
+    --z-fixed: 100;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    :root {
+      --biggest-font-size: 3rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+      --tiny-font-size: .688rem;
+    }
+  }
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    z-index: var(--z-fixed);
+  }
+  .nav{
+    height: calc(3.5rem + .5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-color);
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+    padding-inline: 1.5rem;
+    border-radius: 3rem;
+    
+  }
+  .nav__logo,
+  .nav__toggle,
+  .nav__close{
+    color: var(--title-color);
+  }
+  .nav__logo {
+    font-family: var(--title-font);
+    font-weight: var(--font-medium);
+    text-decoration: none;
+  }
+  .nav__toggle {
+    display: flex;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 2560px){
+      .nav__menu{
+          position: fixed;
+          width: 95%;
+          left: 0;
+          right: 0;
+          bottom: -60%;
+          margin: 0 auto;
+          background-color: var(--nav-color);
+          box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+          padding: 2rem 1.5rem 5rem;
+          border-radius: 2rem;
+          transition: bottom .3s;
+      }
+  }
+  .nav__list{
+      grid-template-columns: repeat(3, max-content);
+      justify-content: center;
+      gap: 2rem 3rem;
+      list-style: none;
+      text-decoration: none;
+  }
+  
+  .nav__link{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: .25rem;
+      font-size: var(--smaller-font-size);
+      color: var(--text-color-light);
+      transition: color .3s;
+      text-decoration: none;
+  }
+  .nav__link:hover{
+      color: var(--title-color);
+  }
+  .nav__link i{
+      font-size: 1.25rem;
+  }
+  .nav__close{
+      position: absolute;
+      right: 1.5rem;
+      bottom: .7rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+  
+  /*            Show Menu           */
+  .show-menu{
+      bottom: 2rem;
+  }
+  
+  
+  
+
   .pricing__container{
-    height: 100vh;
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 85%, rgba(237,231,255,1) 93%);
+    min-height: 120vh;
   }
 
   .pricing__title{
@@ -26,16 +164,18 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0 2rem;
-    gap: 10px;
+    gap: 20px;
   }
 
   .container{
-    width: calc(100% / 3.1);
+    width: 28%;
     border: 1px solid black;
-    padding: 16px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    border-radius: 10px;
   }
 
   .subtitle{
@@ -51,7 +191,7 @@
   .package__details{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     width: 100%;
   }
 
@@ -66,17 +206,23 @@
     flex-direction: column;
     margin-left: 20px;
     font-size: 13px;
-    gap: 20px;
+    gap: 15px;
     height: 100%;
   }
 
   .package__total{
     display: flex;
-    align-items: center;
+    align-items: last baseline;
+    justify-content: center;
     padding-top: 25px;
-    gap: 10px;
+    gap: 40px;
+    height: 100%;
   }
   .package__total h3{
+    display: flex;
+    position: relative;
+    bottom: 1.5rem;
+    align-items: center;
     font-size: 16px;
     text-align: center;
   }
@@ -87,5 +233,94 @@
   .total__breakdown h4{
     font-size: 11px;
     padding-bottom: 5px;
+  }
+  .total__breakdown h5{
+    font-size: 12px;
+  }
+  .total__breakdown p{
+    font-size: 10px;
+  }
+  .breakdown__example{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .border{
+    border-bottom: 1px solid black;
+    padding-bottom: 3.5rem;
+    margin: 0 2rem;
+  }
+  
+  .footer__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  .footer__title{
+    padding-bottom: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 36px;
+  }
+  .footer__container p{
+    padding-bottom: 2.5rem;
+    font-size: 16px;
+  }
+  .footer__list{
+    display: flex;
+    gap: 45px;
+    list-style: none; 
+    padding-bottom: 2rem;
+  }
+  
+
+  .footer__link{
+    text-decoration: none;
+    color: black;
+  }
+
+  .footer__social{
+    display: flex;
+    gap: 19px;
+    padding-bottom: 4rem;
+    font-size: 20px;
+  }
+
+  .footer__social-link{
+    color: black;
+  }
+
+  .footer__copy{
+    font-size: 13px;
+  }
+
+  @media screen and (min-width: 1023px){
+    .nav{
+      width: initial;
+      margin-inline: 1.5rem;
+    }
+    .nav__menu{
+      width: 95%;
+    }
+    .nav__logo{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-size: 30px;
+    }
+    .nav__toggle{
+      font-size: 25px;
+    }
+    .nav__menu{
+      padding: 2rem 1.5rem 3rem;
+    }
+    .nav__list{
+      gap: 3rem 4rem;
+    }
+    .nav__link{
+      font-size: 20px;
+    }
   }
   
