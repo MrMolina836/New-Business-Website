@@ -567,9 +567,10 @@ img {
   font-size: var(--smaller-font-size);
   font-family: var(--title-font);
   border-radius: 15px;
-  padding: .1rem .4rem;
+  padding: .1rem .4rem 1rem .4rem;
   position: relative;
   transition: color .3s;
+
 }
 .services__border{
   width: 410px;

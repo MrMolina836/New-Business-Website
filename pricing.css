@@ -296,6 +296,75 @@
     font-size: 13px;
   }
 
+  @media(max-width: 340px){
+    .nav__menu{
+        padding-bottom: 16px;
+      }
+      .nav__list{
+        gap: 1.5rem 1.25rem;
+      }
+    .pricing__title{
+        padding: 3rem 0 3rem 0;
+        font-size: 13px;
+    }
+    .option__container{
+        display: flex;
+        height: 100%;
+        gap: 5rem;
+        padding: 0 1rem;
+        
+    }
+    .container{
+        width: 100%;
+
+    }
+  }
+
+  @media(max-width: 430px){
+    .pricing__title{
+        padding: 3rem 1rem;
+    }
+    .option__container{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .container{
+        width: 100%;
+    }
+  }
+
+  @media(min-width: 431px) and (max-width: 999px){
+    .pricing__title{
+        padding: 3rem 1rem;
+    }
+    .option__container{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .container{
+        width: 100%;
+    }
+  }
+
+  @media(min-width: 1000px) and (max-width: 1200px){
+    .option__container{
+        display: flex;
+        gap: 2rem;
+    }
+    .package__total{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+    }
+    .package__total h3{
+        padding-top: 4rem;
+    }
+  }
+
   @media screen and (min-width: 1023px){
     .nav{
       width: initial;
@@ -323,4 +392,6 @@
       font-size: 20px;
     }
   }
+
+
   
