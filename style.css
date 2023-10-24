@@ -147,6 +147,7 @@ img {
   border-bottom: 1px solid var(--title-color);
   padding-bottom: .2rem;
   width: 50%;
+  transform: scale(110%);
   transition:all 300ms ease-in-out ;
 }
 
@@ -390,15 +391,13 @@ img {
 
 .about__container-background{
   height: 80%;
-  flex-direction: column;
-  align-items: center;
 }
 
 .company__text{
   font-size: 50px;
   position: absolute;
   left: 50%;
-  bottom: 50%;
+  bottom: 35%;
   transform: translate(-50%, -50%);
 }
 
@@ -590,10 +589,14 @@ img {
 
 /*                                         Skills Section                                  */
 
+.company__services-container{
+  height: 90vh;
+}
+.services__container-background{
+  height: 90%;
+}
 #skills{
-  padding-top: 4vh;
   margin: 0 2rem;
-  min-height: fit-content;
 }
 
 .icon{
@@ -605,12 +608,11 @@ img {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 4rem;
+  width: 90%;
 }
 
 .skills__details-container{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  width: 100%;
 }
 .section__border1{
   border-bottom: 1px solid var(--title-color);
@@ -715,11 +717,15 @@ img {
 .services__container{
   row-gap: 2.5rem;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.edit3{
+  margin: 0 1rem;
 }
 .services__card{
   position: relative;
   width: 390px;
-  height: 320px;
+  height: 300px;
   background-color: #fdf4dc;
   text-align: center;
   padding: 3.4rem 1rem;
@@ -743,6 +749,24 @@ img {
   margin-bottom: .5rem;
   position: relative;
   transition: color .3s;
+}
+
+.service__divider{
+  display: flex;
+  margin: 0 5rem;
+}
+.service__details{
+  margin-top: 5rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service__details h2{
+  padding-bottom: 10px;
+}
+.service__details p{
+  text-align: center;
 }
 .services__para{
   margin-bottom: 20px;
@@ -1636,7 +1660,6 @@ img {
   }
 
   .services__card{
-    height: 480px;
     display: flex;
     flex-direction: column;
     align-items: center;
