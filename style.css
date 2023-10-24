@@ -95,6 +95,9 @@ h1, h2, h3{
   font-weight: var(--font-semi-bold);
   margin-bottom: 0.25rem;
 }
+.edit{
+  padding-bottom: .5rem;
+}
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
@@ -312,7 +315,7 @@ img {
 }
 
 .option__container{
-  height: 30vh;
+  min-height: 30vh;
   padding: 10px 0;
 }
 .home__option{
@@ -732,7 +735,9 @@ img {
   padding: .1rem .4rem 1rem .4rem;
   position: relative;
   transition: color .3s;
-
+}
+.edit2{
+  margin-bottom: .5rem;
 }
 .services__border{
   width: 410px;
@@ -861,8 +866,9 @@ img {
 
 /*                                         Project Subsection                                          */
 .project{
-  height: 70vh;
+  min-height: 70vh;
   text-align: center;
+  padding-block: 1.5rem;
   background-color: #fdf4dc;
 }
 .services__btn i{
@@ -1157,6 +1163,14 @@ img {
     display: flex;
     justify-content: center;
   }
+  .options__display{
+    width: 100%;
+    padding: 10px 0;
+  }
+  .home__option{
+    flex-direction: column;
+    padding: 0 1rem;
+  }
 
   #home{
     min-height: 86vh;
@@ -1249,6 +1263,9 @@ img {
   .services__border{
     display: none;
   }
+  .project{
+    min-height: 40vh;
+  }
   .projects__description{
     width: 300px;
     height: auto;
@@ -1291,8 +1308,16 @@ img {
     display: flex;
     justify-content: center;
   }
+  .options__display{
+    width: 100%;
+    padding: 10px 0;
+  }
+  .home__option{
+    flex-direction: column;
+    padding: 0 1rem;
+  }
   #home{
-    min-height: 86vh;
+    min-height: 100vh;
     margin-bottom: 5rem;
   }
 
@@ -1303,7 +1328,7 @@ img {
 
   .landing__container{
     margin: 0 1rem;
-    padding-top: 4vh;
+    padding-top: 14vh;
   }
   .landing__container, 
   .section-container{
@@ -1333,6 +1358,9 @@ img {
   .btn__container{
     margin-bottom: 20px;
   }
+  .project{
+    min-height: 50vh;
+  }
 }
 
 @media screen and (min-width: 576px){
@@ -1351,6 +1379,14 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+  .options__display{
+    width: 100%;
+    padding: 10px 30px;
+  }
+  .home__option{
+    flex-direction: column;
+    padding: 0 6rem;
   }
   #home{
     min-height: 86vh;
@@ -1401,6 +1437,9 @@ img {
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
+  }
+  .project{
+    min-height: 50vh;
   }
 }
 
@@ -1475,6 +1514,14 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+  .options__display{
+    width: 100%;
+    padding: 10px 10px;
+  }
+  .home__option{
+    flex-direction: row;
+    padding: 0 4rem;
   }
   #home{
     min-height: 91vh;
