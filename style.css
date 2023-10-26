@@ -970,7 +970,9 @@ img {
 }
 
 
-
+.testimonial{
+  margin-bottom: 4rem;
+}
 .testimonial__box{
   display: flex;
   justify-content: center;
