@@ -280,10 +280,12 @@ function initTagCloud() {
   if (window.innerWidth < 340) {
     // Modify configuration for smaller screens
     tagCloudConfig.radius = 100;
+    tagCloudConfig.keep = false;
   }
   if (window.innerWidth < 430) {
     // Modify configuration for smaller screens
     tagCloudConfig.radius = 200;
+    tagCloudConfig.keep = false;
   }
 
   // Create the tag cloud with the configured options
