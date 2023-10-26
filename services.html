@@ -260,36 +260,36 @@
   const Code = [
     'HTML', 'CSS', 'JAVASCRIPT', 'REACT',
     'TYPESCRIPT', 'OPTIMIZATION', 'NODE', 'DEBUGGING',
-    'GIT','UX/UI'
-  ];
-  var color = '#6851ba';
-  document.querySelector('.sphere').style.color = color;
-
-
+    'GIT', 'UX/UI'
+];
+var color = '#6851ba';
 
 // Function to initialize the tag cloud based on screen width
 function initTagCloud() {
-  var tagCloudConfig = {
-    radius: 300,
-    maxSpeed: 'normal',
-    initSpeed: 'fast',
-    direction: 0,
-    keep: false
-  };
+    var tagCloudConfig = {
+        radius: 300,
+        maxSpeed: 'normal',
+        initSpeed: 'fast',
+        direction: 0,
+        keep: false
+    };
 
-  if (window.innerWidth < 340) {
-    // Modify configuration for smaller screens
-    tagCloudConfig.radius = 100;
-    tagCloudConfig.keep = false;
-  }
-  if (window.innerWidth < 430) {
-    // Modify configuration for smaller screens
-    tagCloudConfig.radius = 200;
-    tagCloudConfig.keep = false;
-  }
+    if (window.innerWidth < 340) {
+        // Modify configuration for smaller screens
+        tagCloudConfig.radius = 100;
+        tagCloudConfig.keep = false;
+    } else if (window.innerWidth < 430) {
+        // Modify configuration for medium-sized screens
+        tagCloudConfig.radius = 200;
+        tagCloudConfig.keep = false;
+    }
 
-  // Create the tag cloud with the configured options
-  var tagCloud = TagCloud('.sphere', Code, tagCloudConfig);
+    // Clear the existing tag cloud
+    var sphere = document.querySelector('.sphere');
+    sphere.innerHTML = '';
+
+    // Create the tag cloud with the configured options
+    TagCloud(sphere, Code, tagCloudConfig);
 }
 
 // Initial setup based on the current screen width
