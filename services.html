@@ -277,11 +277,11 @@ function initTagCloud() {
     keep: true
   };
 
-  if (window.innerWidth < 321) {
+  if (window.innerWidth < 340) {
     // Modify configuration for smaller screens
     tagCloudConfig.radius = 100;
   }
-  if (window.innerWidth > 321) {
+  if (window.innerWidth < 430) {
     // Modify configuration for smaller screens
     tagCloudConfig.radius = 200;
   }
@@ -295,8 +295,6 @@ initTagCloud();
 
 // Update the tag cloud when the window is resized
 window.addEventListener('resize', initTagCloud);
-
-  
 
 
 </script>
