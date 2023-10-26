@@ -1352,6 +1352,42 @@ img {
   .services__border{
     display: none;
   }
+  .company__services-container{
+    height: 70vh;
+  }
+  .company__text{
+    bottom: 60%;
+  }
+  .skills__section{
+    height: 90vh;
+    margin-top: 3rem;
+  }
+  .service__divider{
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin: 0 1rem;
+  }
+  .service__details{
+    width: 100%;
+  }
+  .services__container{
+    width: 100%;
+    margin: 0;
+  }
+
+  .skills__title-section{
+    margin: 0 1rem;
+  }
+  .sphere{
+    height: 50%;
+  }
+  .tagcloud{
+    height: 100% !important;
+    width: 100%  !important;
+    font-size: 13px;
+  }
+  
   .project{
     min-height: 40vh;
   }
