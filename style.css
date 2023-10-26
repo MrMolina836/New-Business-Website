@@ -58,8 +58,10 @@
 html {
   scroll-behavior: smooth;
   touch-action: pan-y;
+  overflow-x: hidden;
 }
 body {
+  position: relative;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background: rgb(255,255,255);
