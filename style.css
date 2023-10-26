@@ -1441,6 +1441,7 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
+    bottom: 90%;
   }
   .options__display{
     width: 100%;
@@ -1494,9 +1495,6 @@ img {
   }
   .company__services-container{
     height: 70vh;
-  }
-  .company__text{
-    bottom: 60%;
   }
   .skills__section{
     height: 90vh;
