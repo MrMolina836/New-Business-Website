@@ -254,7 +254,6 @@
      </footer>
       
       <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-      <script src="sphere.js"></script>
 <script src="./main.js"></script>
 
 <script>
@@ -263,19 +262,41 @@
     'TYPESCRIPT', 'OPTIMIZATION', 'NODE', 'DEBUGGING',
     'GIT','UX/UI'
   ];
+  var color = '#6851ba';
+  document.querySelector('.sphere').style.color = color;
 
-  var tagCloud = TagCloud('.sphere', Code, {
 
-    radius: 130,
+
+// Function to initialize the tag cloud based on screen width
+function initTagCloud() {
+  var tagCloudConfig = {
+    radius: 300,
     maxSpeed: 'normal',
     initSpeed: 'fast',
     direction: 0,
     keep: true
-  });
+  };
 
-  var color = '#6851ba';
-  document.querySelector('.sphere').style.color = color;
+  if (window.innerWidth < 321) {
+    // Modify configuration for smaller screens
+    tagCloudConfig.radius = 100;
+  }
+  if (window.innerWidth > 321) {
+    // Modify configuration for smaller screens
+    tagCloudConfig.radius = 200;
+  }
 
+  // Create the tag cloud with the configured options
+  var tagCloud = TagCloud('.sphere', Code, tagCloudConfig);
+}
+
+// Initial setup based on the current screen width
+initTagCloud();
+
+// Update the tag cloud when the window is resized
+window.addEventListener('resize', initTagCloud);
+
+  
 
 
 </script>
