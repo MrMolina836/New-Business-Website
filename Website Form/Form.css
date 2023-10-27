@@ -245,7 +245,7 @@ li{
     display: block;
     margin-top: 4.5rem;
     font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
+    color: black;
   }
 
 
