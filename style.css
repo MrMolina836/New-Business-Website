@@ -82,8 +82,10 @@ h1, h2, h3{
   display: grid;
   gap: 1.5rem;
 }
+
 .section {
   padding-block: 2.5rem;
+  margin: 0 5rem;
 }
 .section__border {
   border-bottom: 1px solid var(--title-color);
@@ -476,7 +478,6 @@ img {
 }
 
 .company__container{
-  width: 100%;
   min-height: 100vh;
 }
 .company__title{
@@ -1441,7 +1442,7 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
-    bottom: 90%;
+    bottom: 92%;
   }
   .options__display{
     width: 100%;
@@ -1607,7 +1608,7 @@ img {
     height: 70vh;
   }
   .company__text{
-    bottom: 60%;
+    bottom: 85%;
   }
   .skills__section{
     height: 90vh;
@@ -1675,6 +1676,13 @@ img {
   .home__info:nth-child(1){
     order: 1;
   }
+  .home__data2{
+    order: -1;
+    grid-row: span 2;
+  }
+  .home__info2:nth-child(2){
+    order: -2;
+  }
   
   #skills{
     margin: 0 2rem;
@@ -1737,6 +1745,7 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
+    bottom: 84.5%;
   }
   .options__display{
     width: 100%;
@@ -1817,13 +1826,13 @@ img {
     flex-direction: row;
     align-items: start;
     gap: 1rem;
-    margin: 0 2rem;
+    margin: 0 4rem;
   }
   .tagcloud{
     font-size: 20px;
   }
   .skills__title-section{
-    margin: 0 8rem;
+    margin: 0 19rem;
   }
   .about__container{
     gap: 7rem;

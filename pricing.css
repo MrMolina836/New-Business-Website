@@ -178,6 +178,7 @@
 
   .pricing__container{
     min-height: 120vh;
+    width: 100%;
   }
 
   .pricing__title{
