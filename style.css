@@ -1285,6 +1285,9 @@ img {
   .section-container{
     display: block;
   }  
+  .home{
+    margin: 0;
+  }
 
   .landing__container{
     margin: 0 1rem;
@@ -1298,6 +1301,9 @@ img {
   
   .company__logo{
     border-radius: 20px;
+  }
+  .company__container{
+    margin: 0;
   }
 
   .section__pic-container{
@@ -1482,6 +1488,12 @@ img {
   
   .company__logo{
     border-radius: 20px;
+  }
+  .home{
+    margin: 0;
+  }
+  .company__container{
+    margin: 0;
   }
 
   .section__pic-container{
@@ -1746,7 +1758,7 @@ img {
     font-size: 20px;
   }
   .company__background-para{
-    margin: 0 9rem;
+    margin: 0 5rem;
   }
   .company__text{
     font-size: 70px;
