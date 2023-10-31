@@ -752,7 +752,7 @@ img {
 }
 
 .skills__section{
-  background-color: #000;
+  background-color: rgba(237,231,255,1);;
   height: 100vh;
   width: 100%;
 }
@@ -762,11 +762,10 @@ img {
   justify-content: center;
   align-items: center;
   margin: 0 15rem;
-  color: white;
+  color: #000;
   text-align: center;
 }
 .skills__title-section h2{
-  color: white;
   padding: 1.5rem 0;
 }
 .sphere{
@@ -783,10 +782,11 @@ img {
   letter-spacing: 1px;
   font-family: var(--title-font);
   font-size: 20px;
+  color: #000;
 }
 
 .tagcloud--item:hover{
-  color: #ffc300;
+  text-shadow: 0 0 10px #03bcf4;
 }
 
 
