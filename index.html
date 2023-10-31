@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!--=============================Swiper CSS=============================================-->
     <link rel="stylesheet" href="assets/css/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css">
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
-    <title>Crossroad Agency</title>
+    <title>Code Lumos</title>
   </head>
   <body>
     <!-----------------------------------------Header Page------------------------------------------------>
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                Crossroads Agency 
+                Code Lumos  
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -83,7 +84,7 @@
       <header class="web__nav" id="home1">
         <div class="webnav__container">
           <div class="web__logo">
-            <p>Crossroad</p>
+            <p>Code Lumos</p>
           </div>
 
           <div class="webnav__list">
@@ -108,7 +109,7 @@
           </div>
           <div class="section__text">
             <p class="section__text-p1">Welcome to</p>
-            <h1 class="title">Crossroad</h1>
+            <h1 class="title">Code Lumos</h1>
             <p class="section__text-p2">
               "We deliver exceptional websites tailored to your unique vision, on time and within budget. 
               Elevate your online presence with our expert freelance agency."
@@ -322,7 +323,7 @@
 
                 <div class="contact__data">
                   <span class="contact__data-title">Direct Message</span>
-                  <span class="contact__data-info">@Crossroad_Tech</span>
+                  <span class="contact__data-info">@Code_Lumos</span>
                   <a href="" target="_blank" class="contact__button">
                     Message me <i class="fas fa-arrow-right"></i>
                   </a>
@@ -362,7 +363,7 @@
          <!-----------------------------------------Footer Page--------------------------------->
          <footer class="footer">
           <div class="footer__container container">
-            <h1 class="footer__title">Crossroads</h1>
+            <h1 class="footer__title">Code Lumos</h1>
             <p>"Where Ideas Take Shape Online"</p>
   
             <ul class="footer__list">
@@ -401,6 +402,21 @@
 
     </main>
 
+    <script>
+       ScrollReveal({
+        reset: false,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+
+      ScrollReveal().reveal('.title', {delay: 500, origin: 'top'});
+      ScrollReveal().reveal('.company__logo', {delay: 1800, origin: 'top'});
+      ScrollReveal().reveal('.projects__img', {delay: 100, origin: 'top'});
+      
+
+    </script>
     
     <!--====================Swiper JS============================-->
   <script src="assets/js/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>

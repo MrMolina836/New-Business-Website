@@ -64,8 +64,7 @@ body {
   position: relative;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,1) 85%, rgba(237,231,255,1) 93%);
+  
   color: var(--text-color);
   overflow-x: hidden;
 }
@@ -145,6 +144,8 @@ img {
 .web__nav{
   height: 10vh;
   font-family: var(--title-font);
+  background-color: rgb(255,255,255);
+  background:  rgba(237,231,255,1);
 }
 .webnav__container{
   height: 100%;
@@ -152,10 +153,12 @@ img {
   align-items: center;
   justify-content: space-evenly;
 }
+
 .webnav__list ul{
   display: flex;
   gap: 25px;
 }
+
 
 .webnav__list ul a:hover{
   border-bottom: 1px solid var(--title-color);
@@ -163,7 +166,10 @@ img {
   width: 50%;
   transform: scale(110%);
   transition:all 300ms ease-in-out ;
+  color: #fff;
+  text-shadow: 0 0 10px #03bcf4;
 }
+
 
 .header {
   width: 100%;
@@ -224,11 +230,11 @@ img {
     align-items: center;
     row-gap: .25rem;
     font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
+    color: #000;
     transition: color .3s;
 }
 .nav__link:hover{
-    color: var(--title-color);
+    color: var(--text-color-light);
 }
 .nav__link i{
     font-size: 1.25rem;
@@ -299,7 +305,23 @@ img {
 .title{
   font-size: 5rem;
   text-align: center;
+  animation: light 3s linear;
 }
+@keyframes light {
+  0%{
+      color: #fff;
+      text-shadow: none;
+  }
+  100%{
+      color: #fff;
+      text-shadow: 0 0 10px #03bcf4,
+      0 0 20px #03bcf4,
+      0 0 40px #03bcf4,
+      0 0 80px #03bcf4,
+      0 0 160px #03bcf4,
+      0 0 10px #03bcf4;
+  }
+} 
 
 #socials__container{
   display: flex;
@@ -968,7 +990,8 @@ img {
   min-height: 70vh;
   text-align: center;
   padding-block: 1.5rem;
-  background-color: #fdf4dc;
+  background-color: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 28%, rgba(237,231,255,1) 97%);
 }
 .services__btn i{
   transition: .3s;
@@ -1189,6 +1212,10 @@ img {
 }
 
 /*                                         Footer Page                                              */
+.footer{
+  background-color: #000;
+  color: white;
+}
 .footer__container{
   padding: 3rem 0 7rem;
   text-align: center;
@@ -1202,6 +1229,8 @@ img {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: 1rem;
+  color: white;
+  text-shadow: 0 0 10px #03bcf4;
 }
 
 .footer__list,
@@ -1215,7 +1244,7 @@ img {
   column-gap: 2.5rem;
 }
 .footer__link{
-  color: var(--title-color);
+  color: white;
 }
 .footer__link:hover{
   text-decoration: underline;
@@ -1227,6 +1256,7 @@ img {
   font-size: 1.25rem;
   color: var(--title-color);
   transition: transform .3s;
+  color: white;
 }
 .footer__social-link:hover{
   transform: translateY(-.15rem);
@@ -1236,7 +1266,8 @@ img {
   display: block;
   margin-top: 4.5rem;
   font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
+  color: white;
+  text-shadow: 0 0 10px #03bcf4;
 }
 
 
