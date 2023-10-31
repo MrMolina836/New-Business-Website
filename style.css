@@ -113,7 +113,8 @@ h1, h2, h3{
 }
 .section__subtitle {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: 14px;
+  font-family: var(--body-font);
   color: var(--text-color-light);
   margin-bottom: 1rem;
 }
@@ -314,12 +315,12 @@ img {
   }
   100%{
       color: #fff;
-      text-shadow: 0 0 10px rgb(165, 134, 255),
-      0 0 20px rgb(165, 134, 255),
-      0 0 40px rgb(165, 134, 255),
-      0 0 80px rgb(165, 134, 255),
-      0 0 160px rgb(165, 134, 255),
-      0 0 10px rgb(165, 134, 255);
+      text-shadow: 0 0 10px #03bcf4,
+      0 0 20px #03bcf4,
+      0 0 40px #03bcf4,
+      0 0 80px #03bcf4,
+      0 0 160px #03bcf4,
+      0 0 10px #03bcf4;
   }
 } 
 
@@ -753,7 +754,7 @@ img {
 
 .skills__section{
   background-color: rgba(237,231,255,1);;
-  height: 100vh;
+  height: 105vh;
   width: 100%;
 }
 .skills__title-section{
@@ -767,6 +768,13 @@ img {
 }
 .skills__title-section h2{
   padding: 1.5rem 0;
+  font-size: 36px;
+  font-family: var(--title-font);
+}
+.skills__title-section p{
+  font-size: 16px;
+  font-family: var(--title-font);
+  line-height: 1.5rem;
 }
 .sphere{
   display: flex;
@@ -786,6 +794,7 @@ img {
 }
 
 .tagcloud--item:hover{
+  color: #fff;
   text-shadow: 0 0 10px #03bcf4;
 }
 
@@ -842,10 +851,12 @@ img {
 }
 .service__details h2{
   padding-bottom: 10px;
+  font-size: 36px;
 }
 .service__details p{
   text-align: center;
   line-height: 1.5rem;
+  font-family: var(--title-font);
 }
 .services__para{
   margin-bottom: 20px;
@@ -853,6 +864,8 @@ img {
   line-height: 1.4rem;
   padding: 0 5px;
   transition: color .2s;
+  font-family: var(--title-font);
+  font-size: 16px;
 }
 .services__btn{
   font-size: var(--smaller-font-size);
@@ -1013,6 +1026,7 @@ img {
 
 .testimonial{
   margin-bottom: 4rem;
+  padding-block: 2.5rem;
 }
 .testimonial__box{
   display: flex;
@@ -1667,7 +1681,6 @@ img {
     bottom: 85%;
   }
   .skills__section{
-    height: 90vh;
     margin-top: 3rem;
   }
   .service__divider{
@@ -1683,10 +1696,6 @@ img {
     width: 100%;
     margin: 0;
   }
-  .services__para{
-    font-size: 14px;
-  }
-
   .skills__title-section{
     margin: 0 3rem;
   }
@@ -1888,7 +1897,7 @@ img {
     font-size: 20px;
   }
   .skills__title-section{
-    margin: 0 19rem;
+    margin: 0 15rem;
   }
   .about__container{
     gap: 7rem;

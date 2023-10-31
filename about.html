@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -377,7 +378,20 @@
           </span>
         </div>
      </footer>
+     <script>
+         ScrollReveal({
+        reset: false,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
 
+
+      ScrollReveal().reveal('.company__text', {delay: 500, origin: 'right'});
+      ScrollReveal().reveal('.home', {delay: 300, origin: 'top'});
+      
+
+     </script>
     <script src="main.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script
     src="https://kit.fontawesome.com/c8e4d183c2.js"
     crossorigin="anonymous"
@@ -14,7 +15,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                Crossroads Agency 
+                Code Lumos
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -74,7 +75,7 @@
     <header class="web__nav" id="top__services">
         <div class="webnav__container">
           <div class="web__logo">
-            <a href="./index.html"><p>Crossroad</p></a>
+            <a href="./index.html"><p>Code Lumos</p></a>
           </div>
 
           <div class="webnav__list">
@@ -114,7 +115,7 @@
         <div class="service__divider section section__border">
             <div class="service__details">
                 <h2>One-Stop Shop</h2>
-                <h2 class="section__subtitle">Why pick our services?</h2>
+                <p class="section__subtitle">Why pick our services?</p>
                 <p>
                     Experience the convenience of a one-stop shop for all your web development needs with our freelancing 
                     company. From design and coding to hosting and maintenance, we've got you covered, delivering seamless 
@@ -216,7 +217,7 @@
       
       <footer class="footer">
         <div class="footer__container container">
-          <h1 class="footer__title">Crossroads</h1>
+          <h1 class="footer__title">Code Lumos</h1>
           <p>"Where Ideas Take Shape Online"</p>
 
           <ul class="footer__list">
@@ -257,6 +258,17 @@
 <script src="./main.js"></script>
 
 <script>
+  ScrollReveal({
+        reset: false,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+
+      ScrollReveal().reveal('.company__text', {delay: 500, origin: 'right'});
+      ScrollReveal().reveal('.sphere', {delay: 500, origin: 'bottom'});
+
     const Code = [
     'HTML', 'CSS', 'JAVASCRIPT', 'REACT',
     'TYPESCRIPT', 'DITIGAL DESIGN',
