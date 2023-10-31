@@ -314,12 +314,12 @@ img {
   }
   100%{
       color: #fff;
-      text-shadow: 0 0 10px #03bcf4,
-      0 0 20px #03bcf4,
-      0 0 40px #03bcf4,
-      0 0 80px #03bcf4,
-      0 0 160px #03bcf4,
-      0 0 10px #03bcf4;
+      text-shadow: 0 0 10px rgb(165, 134, 255),
+      0 0 20px rgb(165, 134, 255),
+      0 0 40px rgb(165, 134, 255),
+      0 0 80px rgb(165, 134, 255),
+      0 0 160px rgb(165, 134, 255),
+      0 0 10px rgb(165, 134, 255);
   }
 } 
 
@@ -932,7 +932,7 @@ img {
 }
 .projects__description{
  width: 350px;
- font-size: var(--small-font-size);
+ font-size: 16px;
  font-family: var(--title-font);
  margin-bottom: 10px;
 }
@@ -991,7 +991,7 @@ img {
   text-align: center;
   padding-block: 1.5rem;
   background-color: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,1) 28%, rgba(237,231,255,1) 97%);
+  background:rgba(237,231,255,1);
 }
 .services__btn i{
   transition: .3s;
@@ -1083,7 +1083,7 @@ img {
   justify-content: center;
   align-items: center;
   column-gap: .5rem;
-  font-size: var(--small-font-size);
+  font-size: 17px;
   font-weight: var(--font-semi-bold);
   margin-bottom: 2.5rem;
 }
@@ -1115,11 +1115,11 @@ img {
   justify-content: center;
 }
 .contact__data-title{
-  font-size: var(--small-font-size);
+  font-size: 16px;
   color: var(--text-color-light);
 }
 .contact__data-info{
-  font-size: var(--small-font-size);
+  font-size: 16px;
   font-family: var(--title-font);
   color: var(--title-color);
 }
