@@ -26,7 +26,7 @@
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
-  --normal-font-size: 18px;
+  --normal-font-size: 16px;
   --small-font-size: 15px;
   --smaller-font-size: 0.90rem;
   --tiny-font-size: 11.5px;
@@ -439,6 +439,7 @@ img {
 
 .company__text h1{
   color: white;
+  text-shadow: 0 0 10px #03bcf4;
 }
 
 
@@ -458,7 +459,7 @@ img {
   width: 100%;
   height: 100px;
   position: relative;
-  background: #000000;
+  background: rgba(237,231,255,1);;
   box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
   display: flex;
   overflow: hidden;
@@ -475,7 +476,9 @@ img {
 .slide p{
   padding: 0 20px 0 20px;
   width: 400px;
-  color: whitesmoke;
+  color: #000;
+  font-size: 15px;
+  font-family: var(--title-font);
 }
 
 
@@ -522,6 +525,7 @@ img {
 .company__background-para{
   text-align: center;
   font-size: var(--normal-font-size);
+  font-family: var(--title-font);
   margin: 0 20rem;
   height: 100%;
   padding-top: 3rem;
@@ -612,6 +616,7 @@ img {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding-bottom: 20px;
 }
 .home__info-number{
   font-size: var(--h1-font-size);
@@ -1796,7 +1801,7 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
-    bottom: 84.5%;
+    bottom: 87%;
   }
   .options__display{
     width: 100%;
@@ -1864,7 +1869,7 @@ img {
     font-size: 18px;
   }
   .home__info-description{
-    font-size: 20px;
+    font-size: 16px;
   }
   .home__social-link{
     font-size: 25px;
