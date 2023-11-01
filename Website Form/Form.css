@@ -177,6 +177,10 @@ li{
     font-weight: 500;
     margin-bottom: 10px;
 }
+.service__container p{
+  text-align: start;
+  font-size: 14px;
+}
 .form .service{
     column-gap: 5px; 
 }
