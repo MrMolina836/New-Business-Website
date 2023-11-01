@@ -259,6 +259,34 @@
     font-size: 16px;
     text-align: center;
   }
+  .package-add__total{
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+    justify-content: center;
+    padding-top: 25px;
+  }
+  .package-add__total h3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .add__on-breakdown{
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+    justify-content: center;
+    padding-top: 25px;
+    gap: 20px;
+    text-align: center;
+  }
+  .add__on-breakdown p{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    
+  }
 
   .total__breakdown{
     font-size: 12px;
