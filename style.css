@@ -444,6 +444,7 @@ img {
 
 .company__text h1{
   color: white;
+  text-shadow: 0 15px 25px rgba(0, 0, 0, 3.5);
   animation: light 3s linear;
 }
 
@@ -757,7 +758,6 @@ img {
 }
 
 .skills__section{
-  background-color: rgba(237,231,255,1);;
   height: 105vh;
   width: 100%;
 }
