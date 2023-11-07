@@ -61,6 +61,11 @@
   .section__border {
     border-bottom: 1px solid var(--title-color);
     padding-bottom: 3.5rem;
+    margin-bottom: 40px;
+  }
+
+  .pricing__title-option{
+    bottom: 1.5rem;
   }
 
 .grid {
@@ -86,6 +91,9 @@
     border-radius: 3rem;
     
   }
+  .sidenav__logo{
+    height: 40px;
+  }
   .nav__logo,
   .nav__toggle,
   .nav__close{
@@ -95,6 +103,9 @@
     font-family: var(--title-font);
     font-weight: var(--font-medium);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   .nav__toggle {
     display: flex;
@@ -131,12 +142,12 @@
       align-items: center;
       row-gap: .25rem;
       font-size: var(--smaller-font-size);
-      color: var(--text-color-light);
+      color: black;
       transition: color .3s;
       text-decoration: none;
   }
   .nav__link:hover{
-      color: var(--title-color);
+      color: var(--text-color-light);
   }
   .nav__link i{
       font-size: 1.25rem;
@@ -157,6 +168,12 @@
   .web__nav{
     height: 10vh;
     font-family: var(--title-font);
+    background-color: #645394;
+  }
+  .web__logo{
+    color: white;
+    text-shadow: 0 0 10px #FCF6F5;
+
   }
   .webnav__container{
     height: 100%;
@@ -167,7 +184,8 @@
   .webnav__list ul{
     display: flex;
     gap: 25px;
-    list-style: none
+    list-style: none;
+    
   }
   
   .webnav__list ul a:hover{
@@ -176,6 +194,8 @@
     width: 50%;
     transform: scale(110%);
     transition:all 300ms ease-in-out ;
+    text-shadow: 0 0 10px #FCF6F5;
+    color: white;
   }
   
 
@@ -196,7 +216,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 0 2rem;
+    padding: 0 4rem;
     gap: 20px;
   }
 
@@ -250,14 +270,18 @@
     padding-top: 25px;
     gap: 40px;
     height: 100%;
+    margin-top: 20px;
   }
   .package__total h3{
     display: flex;
     position: relative;
-    bottom: 1.5rem;
     align-items: center;
     font-size: 16px;
     text-align: center;
+  }
+  .contract__title{
+    display: flex;
+    align-items: center;
   }
   .package-add__total{
     display: flex;
@@ -301,6 +325,15 @@
   .total__breakdown p{
     font-size: 10px;
   }
+  .total__breakdown-contract{
+    text-align: center;
+    font-size: 11px;
+    width: 60%;
+  }
+  .total__breakdown-contract p{
+    font-size: 11px;
+  }
+
   .breakdown__example{
     display: flex;
     flex-direction: column;
@@ -319,11 +352,15 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    background-color: #645394;
+    color: white;
+    padding: 3rem 0 7rem;
   }
   .footer__title{
     padding-bottom: 1.5rem;
     padding-top: 2.5rem;
     font-size: 36px;
+    text-shadow: 0 0 10px #FCF6F5;
   }
   .footer__container p{
     padding-bottom: 2.5rem;
@@ -334,12 +371,13 @@
     gap: 45px;
     list-style: none; 
     padding-bottom: 2rem;
+    
   }
   
 
   .footer__link{
     text-decoration: none;
-    color: black;
+    color: white;
   }
 
   .footer__social{
@@ -350,11 +388,12 @@
   }
 
   .footer__social-link{
-    color: black;
+    color: white;
   }
 
   .footer__copy{
     font-size: 13px;
+    text-shadow: 0 0 10px #FCF6F5;
   }
 
   @media(max-width: 340px){
@@ -412,6 +451,16 @@
     }
     .container{
         width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 1022px) {
+    .nav,
+    .nav__menu{
+      width: 550px;
+    }
+    .nav{
+      margin: 0 auto;
     }
   }
 
