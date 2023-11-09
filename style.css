@@ -657,88 +657,7 @@ img {
 
 /*                                         Skills Section                                  */
 
-.company__services-container{
-  height: 90vh;
-}
-.services__container-background{
-  height: 90%;
-}
-#skills{
-  margin: 0 2rem;
-}
 
-.icon{
-  cursor: pointer;
-  height: 2rem;
-}
-.about__container{
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 4rem;
-  width: 90%;
-}
-
-.skills__details-container{
-  width: 100%;
-}
-.section__border1{
-  border-bottom: 1px solid var(--title-color);
-  padding-bottom: 2.5rem;
-}
-.article__container{
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  row-gap: 4.5rem;
-  justify-content: space-around;
-}
-.article__container1{
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  row-gap: 4.5rem;
-  justify-content: space-around;
-}
-.article__container article{
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 1.5rem;
-  padding-bottom: 10px;
-}
-.article__container1 article{
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 1.5rem;
-}
-.article__container h3{
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-semi-bold);
-}
-.article__container p{
-  font-size: var(--tiny-font-size);
-}
-.article__container1 p{
-  font-size: var(--tiny-font-size);
-}
-.details__container{
-  padding: 1.5rem;
-  flex: 1;
-  border-radius: 2rem;
-  background-color: #fdf4dc;
-  border: rgb(53, 53, 53) 0.15rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .skills__title{
   display: flex;
   justify-content: center;
@@ -1942,6 +1861,3 @@ img {
     width: 100%;
   }
 }
-
-
-
