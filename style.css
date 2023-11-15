@@ -458,8 +458,20 @@ img {
   bottom: 35%;
   transform: translate(-50%, -50%);
 }
+.company__text1{
+  font-size: 50px;
+  position: absolute;
+  left: 50%;
+  bottom: 35%;
+  transform: translate(-50%, -50%);
+}
 
 .company__text h1{
+  color: white;
+  text-shadow: 0 15px 25px rgba(0, 0, 0, 3.5);
+  animation: light 3s linear;
+}
+.company__text1 h1{
   color: white;
   text-shadow: 0 15px 25px rgba(0, 0, 0, 3.5);
   animation: light 3s linear;
@@ -750,6 +762,9 @@ img {
   row-gap: 2.5rem;
   justify-content: center;
   flex-wrap: wrap;
+}
+.service__container-background{
+  height: 100%;
 }
 .edit3{
   margin: 0 1rem;
@@ -1247,6 +1262,12 @@ img {
     display: flex;
     justify-content: center;
   }
+  .company__text1{
+    font-size: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .options__display{
     width: 100%;
     padding: 10px 0;
@@ -1357,6 +1378,9 @@ img {
   .company__text{
     bottom: 60%;
   }
+  .company__text1{
+    bottom: 60%;
+  }
   .skills__section{
     height: 90vh;
     margin-top: 3rem;
@@ -1434,7 +1458,14 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
-    bottom: 92%;
+    bottom: 93%;
+  }
+  .company__text1{
+    font-size: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 89.5%;
   }
   .options__display{
     width: 100%;
@@ -1503,7 +1534,8 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 4rem;
-    margin: 0 2rem;
+    margin: 0 1rem;
+    padding-block: 0;
   }
   .service__details{
     width: 100%;
@@ -1520,7 +1552,7 @@ img {
     margin: 0 3rem;
   }
   .sphere{
-    height: 50%;
+    height: 40%;
   }
   .tagcloud{
     height: 100% !important;
@@ -1544,6 +1576,12 @@ img {
     margin: 0 5rem;
   }
   .company__text{
+    font-size: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .company__text1{
     font-size: 60px;
     width: 100%;
     display: flex;
@@ -1606,6 +1644,9 @@ img {
     height: 70vh;
   }
   .company__text{
+    bottom: 85%;
+  }
+  .company__text1{
     bottom: 85%;
   }
   .skills__section{
@@ -1734,6 +1775,13 @@ img {
     margin: 0 5rem;
   }
   .company__text{
+    font-size: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 87%;
+  }
+  .company__text1{
     font-size: 70px;
     width: 100%;
     display: flex;
